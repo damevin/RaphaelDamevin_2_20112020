@@ -3,7 +3,7 @@
 <head>
 
     <body>
-        <div class="header">
+        <header class="header">
             <!--logo-->
             <div class="logo">
                 <img src="assets/Reservia.svg">
@@ -14,14 +14,14 @@
                 <a class="categories" href="">Activités</a>
                 <a class="categories" href="">S'inscrire</a>
             </div>
-        </div>
+        </header>
         <!--Titre & sous-titre de la page-->
         <div class="firstContent">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en plein en nature</p>
         </div>
         <div class="searchBar">
-            <input type="text" id="name" placeholder="Marseille, France" name="name" required minlength="4" maxlength="8" size="10">
+            <input class="searchBarImput" type="text" id="name" placeholder="Marseille, France" name="name" required minlength="4" maxlength="8" size="10">
         </div>
         <!--Filtres-->
         <div class="filtersButtons">
@@ -40,14 +40,15 @@
         <!--Contenu 1-->
         <div class="content1 ">
             <h3>Hébergements à Marseille</h3>
-            <div class="category1 ">
-                <div class="cardCategory1 " style="background-color: grey; ">
-                    <span class="card1 ">
-                    <img src="https://via.placeholder.com/150x110 ">
-                    <h1>title</h1>
-                </span>
+            <div class="content1Categories">
+                <div class="cardCategory1 " style="background-color: #F2F2F2; ">
+                    <div class="card1 ">
+                        <img src="assets/hebergements/cannebiere.jpg">
+                        <h1>title</h1>
+                        <p>Content</p>
+                    </div>
                     <span class="card2 ">
-                    <img src="https://via.placeholder.com/150x110 ">
+                    <img src="assets/hebergements/hotelduport.jpg" style="width:30%">
                     <h1>title</h1>
                 </span>
                     <span class="card3 ">
@@ -67,7 +68,7 @@
                     <h1>title</h1>
                 </span>
                 </div>
-                <div class="cardCategory2 " style="background-color: grey; ">
+                <div class="cardCategory2 " style="background-color: #F2F2F2; ">
                     <h3>Les plus populaires</h3>
                     <div class="populateCard1 ">
                         <a>card1</a>
@@ -116,6 +117,8 @@
             @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
             * {
                 font-family: 'Raleway', sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
             }
             
             .header {
@@ -133,11 +136,21 @@
                 margin-top: 60px;
             }
             
+            .searchBarImput {
+                width: 340px;
+                height: 50px;
+                border-radius: 10em;
+            }
+            
             .categories {
                 font-size: 20px;
-                text-align: right;
                 color: #0065FC;
                 padding: 40px;
+            }
+            
+            .content1Categories {
+                display: flex;
+                justify-content: center;
             }
             
             .categories:hover {
@@ -150,15 +163,15 @@
             }
             
             .cardCategory1 {
-                width: 60%;
                 display: flex;
-                flex-wrap: nowrap;
-                align-items: flex-start;
-                flex-shrink: 3;
+                flex-wrap: wrap;
+                align-items: center;
+                border-radius: 0.5em;
             }
             
             .cardCategory2 {
                 width: 30%;
+                border-radius: 0.5em;
             }
             
             .card1,
@@ -167,10 +180,11 @@
             .card4,
             .card5,
             .card6 {
-                margin: 30px auto;
-                width: 300px;
-                height: 300px;
-                border-radius: 40px;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                height: 100px;
+                width: 150px;
             }
             
             .footer {
