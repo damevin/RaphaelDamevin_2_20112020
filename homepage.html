@@ -23,13 +23,39 @@
         <div class="searchBar">
             <input class="searchBarImput" type="text" id="name" placeholder="Marseille, France" name="name" required minlength="4" maxlength="8" size="10">
         </div>
-        <!--Filtres-->
-        <div class="filtersButtons">
+
+        <!--Bouttons filtres-->
+
+        <div class="buttons">
             <h4>Filtres</h4>
-            <a class="button" href="">Economique</a>
-            <a class="button" href="">Familial</a>
-            <a class="button" href=""><i class="fas fa-heart"></i>Romantique</button></a>
-            <a class="button" href="">Animaux Autorisés</a>
+            <div id="btn-filters">
+                <a href="#" class="btn-filters1" target="_blank">
+                    <span class="circle fas fa-money-bill-wave"></span>
+                    <span class="title">Economique</span>
+                    <span class="title-hover"></span>
+                </a>
+            </div>
+            <div id="btn-filters">
+                <a href="#" class="btn-filters2" target="_blank">
+                    <span class="circle2 fas fa-child"></span>
+                    <span class="title2">Familial</span>
+                    <span class="title-hover2"></span>
+                </a>
+            </div>
+            <div id="btn-filters">
+                <a href="#" class="btn-filters3" target="_blank">
+                    <span class="circle3 fas fa-heart"></span>
+                    <span class="title3">Romantique</span>
+                    <span class="title-hover3"></span>
+                </a>
+            </div>
+            <div id="btn-filters">
+                <a href="#" class="btn-filters4" target="_blank">
+                    <span class="circle4 fas fa-dog"></span>
+                    <span class="title4">Animaux autorisés</span>
+                    <span class="title-hover4"></span>
+                </a>
+            </div>
         </div>
         <!--Informations sur les logements dispofznibles-->
         <div>
@@ -43,7 +69,7 @@
             <div class="content1Categories">
                 <div class="cardCategory1 " style="background-color: #F2F2F2; ">
                     <div class="card1 ">
-                        <img src="assets/hebergements/cannebiere.jpg">
+                        <img style="width: 10%" src="assets/hebergements/cannebiere.jpg">
                         <h1>title</h1>
                         <p>Content</p>
                     </div>
@@ -121,20 +147,11 @@
                 margin-right: 30px;
             }
             
-            .button {
-                display: inline-block;
-                white-space: nowrap;
-                background-color: #f4F4F4;
-                border: 1px solid #777;
-                padding: 0 1.5em;
-                margin: 0.5em;
-                font: bold 1em/2em;
-                text-decoration: none;
-                font-size: 1.3em;
-                color: #333;
-                text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
-                border-radius: 5em;
-                box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+            .buttons {
+                display: flex;
+                width: 60%;
+                justify-content: baseline;
+                align-items: baseline;
             }
             
             .header {
@@ -144,13 +161,184 @@
             }
             
             .logo {
-                margin-top: 60px;
-                padding: 40px;
+                margin-top: 3em;
             }
             
             .listCategories {
-                margin-top: 60px;
+                margin-top: 3em;
             }
+            /*Configuration des boutons de filtres*/
+            
+            #btn-filters {
+                margin: 10px auto;
+            }
+            
+            .btn-filters1,
+            .btn-filters2,
+            .btn-filters3,
+            .btn-filters4 {
+                position: relative;
+                display: inline-block;
+                height: 50px;
+                line-height: 50px;
+                padding: 0;
+                border-radius: 50px;
+                background: white;
+                border: 2px solid #0065FC;
+                margin: 10px;
+                transition: .5s
+            }
+            /*Taille des boutons*/
+            
+            .btn-filters1 {
+                border: 3px solid grey;
+                width: 190px;
+            }
+            
+            .btn-filters2 {
+                border: 3px solid grey;
+                width: 150px;
+            }
+            
+            .btn-filters3 {
+                border: 3px solid grey;
+                width: 190px;
+            }
+            
+            .btn-filters4 {
+                border: 3px solid grey;
+                width: 250px;
+            }
+            /*Affichage du bouton au survol*/
+            
+            .btn-filters1:hover,
+            .btn-filters2:hover,
+            .btn-filters3:hover,
+            .btn-filters4:hover {
+                background-color: #DEEBFF;
+            }
+            /*Configuration de la puce au survol*/
+            
+            .btn-filters1:hover span.circle,
+            .btn-filters2:hover span.circle2,
+            .btn-filters3:hover span.circle3,
+            .btn-filters4:hover span.circle4 {
+                left: 100%;
+                margin-left: -49px;
+                background-color: #0065FC;
+            }
+            /*Couleur de l'icone au survol*/
+            
+            .btn-filters1:hover span.circle,
+            .btn-filters2:hover span.circle2,
+            .btn-filters3:hover span.circle3,
+            .btn-filters4:hover span.circle4 {
+                color: white;
+            }
+            /*Déplacement du titre dans le bouton au survol*/
+            
+            .btn-filters1:hover span.title,
+            .btn-filters2:hover span.title2,
+            .btn-filters3:hover span.title3,
+            .btn-filters4:hover span.title4 {
+                left: 40px;
+                opacity: 0;
+            }
+            
+            .btn-filters1:hover span.title-hover,
+            .btn-filters2:hover span.title-hover2,
+            .btn-filters3:hover span.title-hover3,
+            .btn-filters4:hover span.title-hover4 {
+                opacity: 1;
+                left: 40px;
+            }
+            /*Configuration des puces*/
+            
+            .btn-filters1 span.circle,
+            .btn-filters2 span.circle2,
+            .btn-filters3 span.circle3,
+            .btn-filters4 span.circle4 {
+                display: block;
+                background-color: #DEEBFF;
+                text-align: center;
+                color: #0065FC;
+                position: absolute;
+                margin: 0;
+                line-height: 50px;
+                height: 50px;
+                width: 50px;
+                top: 0;
+                left: 0px;
+                transition: .5s;
+                border-radius: 50%;
+            }
+            
+            .btn-filters1 span.title,
+            .btn-filters1 span.title-hover,
+            .btn-filters2 span.title2,
+            .btn-filters2 span.title-hover2,
+            .btn-filters3 span.title3,
+            .btn-filters3 span.title-hover3,
+            .btn-filters4 span.title4,
+            .btn-filters4 span.title-hover4 {
+                position: absolute;
+                left: 55px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 22px;
+                font-weight: bold;
+                color: black;
+                transition: .5s;
+            }
+            /*
+            .btn-filters1 span.title,
+            .btn-filters1 span.title-hover {
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                left: 55px;
+            }
+            
+            .btn-filters2 span.title2,
+            .btn-filters2 span.title-hover2 {
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                left: 55px;
+            }
+            
+            .btn-filters3 span.title3,
+            .btn-filters3 span.title-hover3 {
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                left: 55px;
+            }
+            
+            .btn-filters4 span.title4,
+            .btn-filters4 span.title-hover4 {
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                left: 55px;
+            }
+            
+            
+            .btn-filters1 span.title-hover,
+            .btn-filters2 span.title-hover2,
+            .btn-filters3 span.title-hover3,
+            .btn-filters4 span.title-hover4 {
+                left: 80px;
+                opacity: 0;
+            }
+            
+            .btn-filters1 span.title-hover,
+            .btn-filters2 span.title-hover2,
+            .btn-filters3 span.title-hover3,
+            .btn-filters4 span.title-hover4 {
+                color: black;
+            }
+            */
             
             .searchBarImput {
                 width: 340px;
@@ -173,15 +361,10 @@
                 color: red;
             }
             
-            .button3 {
-                background-color: blue;
-                border-radius: 15em;
-            }
-            
             .cardCategory1 {
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
+                //align-items: center;
                 border-radius: 0.5em;
             }
             
