@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 3em;
+}
+
+.listCategories {
+    margin-top: 3em;
+    text-decoration: none;
+}
+
+
+/*Configuration des boutons de filtres*/
+
+.buttons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-filters1,
+.btn-filters2,
+.btn-filters3,
+.btn-filters4 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: white;
+    border: 2px solid #0065FC;
+    margin: 10px;
+    transition: .5s
+}
+
+
+/*Taille des boutons*/
+
+.btn-filters1 {
+    border: 3px solid grey;
+    width: 190px;
+}
+
+.btn-filters2 {
+    border: 3px solid grey;
+    width: 150px;
+}
+
+.btn-filters3 {
+    border: 3px solid grey;
+    width: 190px;
+}
+
+.btn-filters4 {
+    border: 3px solid grey;
+    width: 250px;
+}
+
+
+/*Affichage du bouton au survol*/
+
+.btn-filters1:hover,
+.btn-filters2:hover,
+.btn-filters3:hover,
+.btn-filters4:hover {
+    background-color: #DEEBFF;
+}
+
+
+/*Configuration de la puce au survol*/
+
+.btn-filters1:hover span.circle,
+.btn-filters2:hover span.circle2,
+.btn-filters3:hover span.circle3,
+.btn-filters4:hover span.circle4 {
+    left: 100%;
+    margin-left: -49px;
+    background-color: #0065FC;
+}
+
+
+/*Couleur de l'icone au survol*/
+
+.btn-filters1:hover span.circle,
+.btn-filters2:hover span.circle2,
+.btn-filters3:hover span.circle3,
+.btn-filters4:hover span.circle4 {
+    color: white;
+}
+
+
+/*Déplacement du titre dans le bouton au survol*/
+
+.btn-filters1:hover span.title,
+.btn-filters2:hover span.title2,
+.btn-filters3:hover span.title3,
+.btn-filters4:hover span.title4 {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-filters1:hover span.title-hover,
+.btn-filters2:hover span.title-hover2,
+.btn-filters3:hover span.title-hover3,
+.btn-filters4:hover span.title-hover4 {
+    opacity: 1;
+    left: 40px;
+}
+
+
+/*Configuration des puces*/
+
+.btn-filters1 span.circle,
+.btn-filters2 span.circle2,
+.btn-filters3 span.circle3,
+.btn-filters4 span.circle4 {
+    display: block;
+    background-color: #DEEBFF;
+    text-align: center;
+    color: #0065FC;
+    position: absolute;
+    margin: 0;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0px;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-filters1 span.title,
+.btn-filters1 span.title-hover,
+.btn-filters2 span.title2,
+.btn-filters2 span.title-hover2,
+.btn-filters3 span.title3,
+.btn-filters3 span.title-hover3,
+.btn-filters4 span.title4,
+.btn-filters4 span.title-hover4 {
+    position: absolute;
+    left: 55px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    transition: .5s;
+}
+
+
+/*
+.btn-filters1 span.title,
+.btn-filters1 span.title-hover {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    left: 55px;
+}
+
+.btn-filters2 span.title2,
+.btn-filters2 span.title-hover2 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    left: 55px;
+}
+
+.btn-filters3 span.title3,
+.btn-filters3 span.title-hover3 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    left: 55px;
+}
+
+.btn-filters4 span.title4,
+.btn-filters4 span.title-hover4 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    left: 55px;
+}
+
+
+.btn-filters1 span.title-hover,
+.btn-filters2 span.title-hover2,
+.btn-filters3 span.title-hover3,
+.btn-filters4 span.title-hover4 {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-filters1 span.title-hover,
+.btn-filters2 span.title-hover2,
+.btn-filters3 span.title-hover3,
+.btn-filters4 span.title-hover4 {
+    color: black;
+}
+*/
+
+.searchBarImput {
+    width: 340px;
+    height: 50px;
+    border-radius: 10em;
+}
+
+.categories {
+    font-size: 20px;
+    color: #0065FC;
+    padding: 40px;
+}
+
+.content1Categories {
+    display: flex;
+    justify-content: center;
+}
+
+.categories:hover {
+    color: red;
+}
+
+.cardCategory1 {
+    display: flex;
+    flex-wrap: wrap;
+    //align-items: center;
+    border-radius: 0.5em;
+}
+
+.cardCategory2 {
+    width: 30%;
+    border-radius: 0.5em;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    border-radius: 0.5em;
+    height: 20em;
+}
+
+.collumn1:hover {
+    font-weight: bold;
+}
