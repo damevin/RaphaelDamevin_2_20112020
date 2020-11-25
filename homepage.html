@@ -25,12 +25,13 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en plein en nature</p>
             </div>
-            <div class="searchBar">
-                <input class="searchBarImput" type="text" id="name" placeholder="Marseille, France" name="name" required minlength="4" maxlength="8" size="10">
+            <!--Search bar-->
+            <div id="searchBar">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="search" placeholder="e.g. Marseille, France">
+                <button class="buttonSearch">Search</button>
             </div>
-
             <!--Bouttons filtres-->
-
             <div class="buttons">
                 <h4>Filtres</h4>
                 <div id="btn-filters">
@@ -64,9 +65,9 @@
             </div>
             <!--Informations sur les logements dispofznibles-->
             <div>
-                <i class="fas fa-info-circle ">
-            Plus de 500 logements sont disponibles dans cette ville.
-            </i>
+                <i class="fas fa-info-circle " style="color: #0065fc;"></i>
+                <a>Plus de 500 logements sont disponibles dans cette ville.
+                </a>
             </div>
             <!--Contenu 1-->
             <div class="content1 ">
