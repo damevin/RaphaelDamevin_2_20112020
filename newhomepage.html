@@ -16,8 +16,12 @@
             <a>S'inscrire</a>
         </div>
         <div class="headerCategories">
-            <a>Hébergements</a>
-            <a>Activités</a>
+            <div class="categoryOne">
+                <a>Hébergements</a>
+            </div>
+            <div class="categoryTwo">
+                <a>Activités</a>
+            </div>
         </div>
     </header>
 </body>
@@ -31,6 +35,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 40px;
+        font-weight: bold;
         margin-right: 20px;
         margin-top: 30px;
     }
@@ -43,14 +48,19 @@
     
     .headerCategories {
         color: #0065FC;
+        padding-bottom: 20px;
         margin-top: 40px;
         margin-bottom: 10px;
-        border-bottom: solid #0065FC 10px;
+        border-bottom: solid #0065FC 5px;
         font-size: 40px;
         font-weight: bold;
         display: flex;
         justify-content: space-around;
     }
+    
+    .categoryOne {}
+    
+    .categoryTwo {}
 </style>
 
 </html>
