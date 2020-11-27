@@ -5,7 +5,7 @@
 
 html,
 body {
-    margin: 50px
+    //margin: 50px
 }
 
 .header {
@@ -16,11 +16,11 @@ body {
 }
 
 .logo {
-    margin-top: 3em;
+    //margin-top: 3em;
 }
 
 .listCategories {
-    margin-top: 3em;
+    //margin-top: 3em;
     text-decoration: none;
 }
 
@@ -223,42 +223,160 @@ button:active {
     transition: .5s;
 }
 
-.categories {
-    font-size: 20px;
-    color: #0065FC;
-    padding: 40px;
-}
-
-.content1Categories {
+#section {
+    width: 70%;
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2em;
     justify-content: center;
 }
 
-.categories:hover {
-    color: red;
+#firstSection {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: auto;
 }
 
-.cardCategory1 {
+#titleSection {
+    padding-bottom: 0px;
+    padding-left: 40px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.container {
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    //align-items: center;
-    border-radius: 0.5em;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
 }
 
-.cardCategory2 {
-    width: 30%;
-    border-radius: 0.5em;
+.figure {
+    background-color: white;
+    border-radius: 20px;
+    width: 19em;
+    height: 16.5em;
+    box-sizing: border-box;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
+.figure:hover {
+    filter: brightness(95%);
+    color: black;
+}
+
+.popular:hover {
+    filter: brightness(95%);
+    color: black;
+}
+
+.img-search {
+    width: 18em;
+    height: 10em;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.caption {
+    padding-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.icons {
+    padding-left: 10px;
+    color: #0065FC
+}
+
+#show-more {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#most-popular {
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    width: 5.5em;
+}
+
+a:hover {
+    color: #717778;
+}
+
+.caption-pop {
+    padding-left: 25px;
+}
+
+.price-pop {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+span {
+    font-weight: bold;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+aside {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.popular {
     background-color: white;
+    border-radius: 20px;
+    width: 25.5em;
+    height: 12em;
+    box-sizing: border-box;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-popular {
+    width: 10.3em;
+    height: 11em;
+    padding-top: 3px;
+    padding-right: 10px;
+    margin-right: 20px;
+    padding-left: 3px;
+    margin: 4px;
+    float: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .footer {
