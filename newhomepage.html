@@ -11,19 +11,30 @@
 
 <body>
     <header>
-        <div class="header">
-            <img class="logo" src="assets/Reservia.svg">
-            <a>S'inscrire</a>
-        </div>
-        <div class="headerCategories">
-            <div class="categoryOne">
-                <a>Hébergements</a>
+        <nav>
+            <div class="header">
+                <img class="logo" src="assets/Reservia.svg">
+                <a class=headerTitle>S'inscrire</a>
             </div>
-            <div class="categoryTwo">
-                <a>Activités</a>
+            <div class="headerCategories">
+                <div class="categoryOne">
+                    <a>Hébergements</a>
+                </div>
+                <div class="categoryTwo">
+                    <a>Activités</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
+    <div class="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h3>En plein centre ville ou en pleine nature</h3>
+    </div>
+    <div class="searchBar">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" id="search" placeholder="Marseille, France">
+        <i class="fas fa-search"></i>
+    </div>
 </body>
 <style>
     * {
@@ -34,33 +45,81 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 40px;
-        font-weight: bold;
-        margin-right: 20px;
-        margin-top: 30px;
+        font: 40px bolder;
+        margin: 70px 65px;
+        color: #0065FC
     }
+    
+    .headerTitle {}
     
     .logo {
         width: 25%;
-        margin-left: 10px;
-        margin-top: 30px;
     }
     
     .headerCategories {
-        color: #0065FC;
-        padding-bottom: 20px;
-        margin-top: 40px;
+        color: grey;
+        padding-bottom: 40px;
+        margin-top: 80px;
         margin-bottom: 10px;
-        border-bottom: solid #0065FC 5px;
+        border-bottom: solid grey 5px;
         font-size: 40px;
         font-weight: bold;
         display: flex;
         justify-content: space-around;
     }
     
+    h1 {
+        font-size: 60px;
+        font-weight: bolder;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+    
+    h3 {
+        font-weight: lighter;
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    
+    input {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        border: none;
+    }
+    
+    .searchBar {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        height: 130px;
+        border: 5px solid whitesmoke;
+        border-radius: 35px;
+    }
+    
+    .fa-map-marker-alt {
+        background-color: whitesmoke;
+        color: black;
+        font-size: 50px;
+        padding: 40px;
+        padding-left: 50px;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+    
+    .fa-search {
+        background-color: #0065FC;
+        color: white;
+        padding: 40px;
+        padding-left: 50px;
+        font-size: 50px;
+        border-radius: 35px;
+    }
+    
     .categoryOne {}
     
     .categoryTwo {}
 </style>
+<script src="https://kit.fontawesome.com/5e85fafa45.js " crossorigin="anonymous "></script>
 
 </html>
