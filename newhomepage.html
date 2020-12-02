@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Réservez vos vacances de rêve">
-
+    <script src="https://kit.fontawesome.com/5e85fafa45.js" crossorigin="anonymous">
+    </script>
     <title>Reservia</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -67,18 +68,18 @@
                 <img src="assets/hebergements/lesoleildumatin.jpg" class="imgCard1">
             </div>
             <div class="contentCard1">
-                <h3>Hôtel Le soleil du matin</h3>
-                <a style="font-size: 30px; ">Nuit à partir de 128€</a>
-                <div class=" rattingStars " style="font-size: 30px;color: #0065FC;>
-                    <i class=" fas fa-star "></i>
+                <h4>Hôtel Le soleil du matin</h4>
+                <span>Nuit à partir de 128€</span>
+                <div class="rattingStars1" style="font-size: 30px">
                     <i class="fas fa-star "></i>
                     <i class="fas fa-star "></i>
                     <i class="fas fa-star "></i>
                     <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
     </div>
 </body>
@@ -169,15 +170,14 @@
     .filters {
         font-size: 40px;
         font-weight: bold;
-
     }
+    
     .filtersBtns {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        margin: 30px;
-
+        margin: auto;
     }
     
     .circle1 {
@@ -187,6 +187,7 @@
         border-radius: 150px;
         text-align: center;
     }
+    
     .btn1 {
         border: 3px solid grey;
         border-radius: 150px;
@@ -194,6 +195,7 @@
         max-height: 140px;
         display: flex;
         align-items: center;
+        margin-block: 20px;
     }
     
     .title1 {
@@ -210,13 +212,16 @@
         max-height: 140px;
         display: flex;
         align-items: center;
+        margin-block: 20px;
     }
+    
     .title2 {
         margin: 30px;
         text-align: center;
         font-size: 48px;
         font-weight: bold;
     }
+    
     .circle2 {
         padding: 40px;
         background-color: #DEEBFF;
@@ -232,14 +237,16 @@
         max-height: 140px;
         display: flex;
         align-items: center;
+        margin-block: 20px;
     }
+    
     .title3 {
         margin-left: 10px;
         margin-right: 20px;
         font-size: 48px;
         font-weight: bold;
-
     }
+    
     .circle3 {
         padding: 40px;
         background-color: #DEEBFF;
@@ -255,14 +262,16 @@
         max-height: 140px;
         display: flex;
         align-items: center;
+        margin-block: 20px;
     }
+    
     .title4 {
         margin-left: 10px;
         margin-right: 20px;
         font-size: 48px;
         font-weight: bold;
     }
-
+    
     .circle4 {
         padding: 40px;
         background-color: #DEEBFF;
@@ -276,7 +285,8 @@
     }
     
     .titlePopular {
-        padding: 35px;
+        padding: 40px;
+        margin-top: 50px;
         font-size: 50px;
         display: flex;
         align-items: center;
@@ -285,7 +295,9 @@
     
     .card1 {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 400px;
+        margin: 35px;
         border-radius: 50px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
@@ -295,14 +307,38 @@
         padding: 10px;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
-        width: 500px;
+        width: 400px;
+        height: 360px;
+        background-size: auto;
     }
     
     .contentCard1 {
         text-align: left;
-        h3:{
-            font-size: 45px;
-        }
+        justify-content: center;
+    }
+    
+    .contentCard1 h4 {
+        display: block;
+        margin-block-start: 15px;
+        margin-block-end: 15px;
+        margin-left: 15px;
+        font-size: 52px;
+    }
+    
+    .contentCard1 span {
+        font-size: 40px;
+        margin-left: 15px;
+        text-align: left;
+    }
+    
+    .rattingStars1 {
+        margin-left: 15px;
+        margin-top: 130px;
+        color: #0065FC;
+    }
+    
+    .fa-star {
+        font-size: 40px;
     }
     
     .card2 {}
@@ -312,6 +348,6 @@
     .mostPopular {
         background-color: #F2F2F2;
 </style>
-<script src="https://kit.fontawesome.com/5e85fafa45.js " crossorigin="anonymous "></script>
+
 
 </html>
