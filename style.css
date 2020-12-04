@@ -238,27 +238,27 @@
     }
     
     .sectionOne .imgCard4 {
-        background-image: url(assets/hebergements/cannebiere.jpg);
+        background-image: url(assets/accommodation/cannebiere.jpg);
     }
     
     .sectionOne .imgCard5 {
-        background-image: url(assets/hebergements/hotelduport.jpg);
+        background-image: url(assets/accommodation/hotelduport.jpg);
     }
     
     .sectionOne .imgCard6 {
-        background-image: url(assets/hebergements/hotellesmouettes.jpg);
+        background-image: url(assets/accommodation/hotellesmouettes.jpg);
     }
     
     .sectionOne .imgCard7 {
-        background-image: url(assets/hebergements/hoteldelamer.jpg);
+        background-image: url(assets/accommodation/hoteldelamer.jpg);
     }
     
     .sectionOne .imgCard8 {
-        background-image: url(assets/hebergements/aubergelepanier.jpg);
+        background-image: url(assets/accommodation/aubergelepanier.jpg);
     }
     
     .sectionOne .imgCard9 {
-        background-image: url(assets/hebergements/hotelchezamina.jpg);
+        background-image: url(assets/accommodation/hotelchezamina.jpg);
     }
     
     .sectionOne h4 {
@@ -301,7 +301,7 @@
         display: block;
         margin-block-start: 15px;
         margin-block-end: 5px;
-        margin-left: 30px;
+        margin: 60px 30px;
         font-size: 52px;
         font-weight: bold;
     }
@@ -314,10 +314,54 @@
         filter: drop-shadow(0 0 4px grey);
     }
     
-    .sectionTwo .imgCard {
-        background-image: url(assets/hebergements/cannebiere.jpg);
-        background-position: top 35px;
+    .sectionTwo .imgCard10,
+    .sectionTwo .imgCard11,
+    .sectionTwo .imgCard12,
+    .sectionTwo .imgCard13,
+    .sectionTwo .imgCard14,
+    .sectionTwo .imgCard15 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         min-height: 350px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+    }
+    
+    .sectionTwo .imgCard10 {
+        background-image: url(assets/activities/vieuxport.jpg);
+    }
+    
+    .sectionTwo .imgCard11 {
+        background-image: url(assets/activities/fortdepomègues.jpg);
+    }
+    
+    .sectionTwo .imgCard12 {
+        background-image: url(assets/activities/ilesdufrioul.jpg);
+    }
+    
+    .sectionTwo .imgCard13 {
+        background-image: url(assets/activities/calanques.jpg);
+    }
+    
+    .sectionTwo .imgCard14 {
+        background-image: url(assets/activities/notredamedelagarde.jpg);
+    }
+    
+    .sectionTwo .imgCard15 {
+        background-image: url(assets/activities/longchamp.jpg);
+    }
+    
+    footer {
+        background-color: #F2F2F2;
+        min-height: 1000px;
+    }
+    
+    footer h3 {
+        padding: 30px;
+    }
+    
+    footer h3,
+    footer ul {
+        margin: 30px 30px 30px;
     }
