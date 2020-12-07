@@ -1,5 +1,10 @@
     * {
         font-family: Raleway;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
     }
     
     .header {
@@ -91,10 +96,7 @@
         flex-wrap: wrap;
     }
     
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
+    .circle {
         padding: 40px;
         background-color: #DEEBFF;
         color: #0065FC;
@@ -102,17 +104,15 @@
         text-align: center;
     }
     
-    .btn1,
-    .btn2,
-    .btn3,
-    .btn4 {
+    .btn {
         border: 3px solid grey;
         border-radius: 150px;
         width: auto;
         max-height: 140px;
         display: flex;
         align-items: center;
-        margin-block: 20px;
+        /* margin-block: 20px; */
+        margin: 10px 20px;
     }
     
     .title1,
@@ -223,7 +223,7 @@
         filter: drop-shadow(0 0 4px grey);
     }
     
-    .sectionOne .imgCard4,
+    /* .sectionOne .imgCard4, */
     .sectionOne .imgCard5,
     .sectionOne .imgCard6,
     .sectionOne .imgCard7,
@@ -236,10 +236,16 @@
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
     }
-    
-    .sectionOne .imgCard4 {
-        background-image: url(assets/accommodation/cannebiere.jpg);
+
+    .card-img img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
     }
+    
+    /* .sectionOne .imgCard4 {
+        background-image: url(assets/accommodation/cannebiere.jpg);
+    } */
     
     .sectionOne .imgCard5 {
         background-image: url(assets/accommodation/hotelduport.jpg);
@@ -365,4 +371,14 @@
     footer h3,
     footer ul {
         margin: 30px 30px 30px;
+    }
+
+    /* ipad */
+    @media screen and (min-width: 786px) {
+        
+    }
+
+    /* ordi */
+    @media screen and (min-width: 1024px) {
+        
     }
