@@ -1,4 +1,4 @@
-    * {
+        * {
         font-family: Raleway;
         box-sizing: border-box;
     }
@@ -8,98 +8,120 @@
     }
     
     .header {
+        padding: 20px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         color: #0065FC;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: bold;
     }
     
-    .header .logo {
-        width: 30%;
+    .header img {
+        max-width: 25%;
     }
-    
-    .header {}
     
     .headerCategories {
         display: flex;
         justify-content: space-around;
+        border-bottom: 2px solid #F2F2F2;
     }
     
-    .headerCategories h2 {}
+    .headerCategories h2 {
+        font-size: 18px;
+    }
     
     .title h1 {
-        font-size: 20px;
         margin: 0;
+        font-size: 20px;
+        padding: 15px;
+        font-weight: bold;
     }
     
     .title h3 {
+        font-weight: 500;
         font-size: 15px;
-        margin: 0;
+        margin: 15px;
     }
     
     .searchBar {
-        margin: 80px 30px;
+        max-width: 400px;
+        margin: 15px;
         display: flex;
         justify-content: space-between;
-        height: 130px;
-        border: 5px solid whitesmoke;
-        border-radius: 40px;
+        height: 50px;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
     }
     
     .searchBar input {
-        font-size: 50px;
         font-weight: bold;
         color: black;
         border: none;
+        width: auto;
     }
     
     .fa-map-marker-alt {
         background-color: whitesmoke;
         color: black;
-        font-size: 50px;
-        padding: 40px;
-        padding-left: 50px;
-        border-top-left-radius: 35px;
-        border-bottom-left-radius: 35px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 20%;
+        text-align: center;
+        padding: 15px;
     }
     
     .fa-search {
         background-color: #0065FC;
         color: white;
-        font-size: 50px;
-        border-radius: 35px;
+        border-radius: 15px;
+        width: 20%;
+        text-align: center;
+        padding: 15px
     }
     
-    .filters {}
+    .filters {
+        margin: 10px;
+    }
     
     .filtersBtns {
         display: flex;
         flex-wrap: wrap;
+        gap: 9px
     }
     
-    .circle {
-        padding: 20px;
+    .filtersBtns span {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .filtersBtns i {
+        text-align: center;
         background-color: #DEEBFF;
         color: #0065FC;
-        border-radius: 50px;
+        border-radius: 100px;
         text-align: center;
+        padding: 20px;
     }
     
     .btn {
         border: 2px solid grey;
         border-radius: 150px;
+        min-width: 125px;
         width: auto;
-        max-height: 140px;
         display: flex;
         align-items: center;
+        font-weight: bold;
     }
     
     .descriptionFilters {
-        justify-content: space-between;
+        display: flex;
+        margin: 25px 5px
     }
     
     .descriptionFilters i {
-        color: #0065FC
+        color: #0065FC;
+        margin: 10px;
     }
     
     .mostPopular {
@@ -107,7 +129,7 @@
     }
     
     .titlePopular {
-        margin: 10px;
+        margin: 18px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -118,14 +140,16 @@
         border-radius: 25px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
-        display: flex
+        display: flex;
+        margin: 15px
     }
     
     .mostPopular .imgCard {
-        width: 150px;
+        width: 130px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         object-fit: cover;
+        align-items: center;
         height: 130px;
     }
     
@@ -133,12 +157,19 @@
         text-align: left;
     }
     
-    .mostPopular .contentCard h4 {}
+    .mostPopular .contentCard h4 {
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
     
-    .mostPopular .contentCard span {}
+    .mostPopular .contentCard span {
+        margin-left: 8px;
+        font-size: 14px
+    }
     
     .mostPopular .fa-star {
-        font-size: 15px;
+        font-size: 13px;
+        margin-top: 8px;
     }
     
     .titleSectionOne h4 {
@@ -147,12 +178,12 @@
     /*Cards section one */
     
     .sectionOne {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
     .sectionOne h3 {
         font-weight: bold;
-        margin: 30px;
+        margin: 35px 20px;
     }
     
     .sectionOne .card {
@@ -160,6 +191,7 @@
         border-radius: 20px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
+        margin: 15px;
     }
     /* .sectionOne .imgCard4, */
     
@@ -174,37 +206,51 @@
     
     .rattingStars {
         color: #0065FC;
+        margin-top: 20px;
+        margin-left: 8px;
     }
     
     .sectionOne h4 {
-        display: block;
-        margin-block-start: 15px;
-        margin-block-end: 5px;
+        margin: 10px;
+        margin-bottom: 3px;
         font-weight: bold;
+        font-size: 18px
     }
     
     .sectionOne span {
         text-align: left;
+        margin: 10px;
+        font-size: 15px
+    }
+    
+    .sectionOne .rattingStars {
+        color: #0065FC;
+        margin-top: 5px;
+        margin-left: 10px
     }
     
     .seeMore {
         font-weight: bold;
+        margin: 15px;
     }
     /* Cards Section Two */
     
     .sectionTwo {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
     .sectionTwo h3 {
         font-weight: bold;
+        margin: 35px 20px;
     }
     
     .sectionTwo h4 {
         font-weight: bold;
+        margin: 20px 20px
     }
     
     .sectionTwo .card {
+        margin: 15px;
         height: 180px;
         border-radius: 20px;
         background-color: white;
@@ -214,7 +260,7 @@
     .sectionTwo .card-img img {
         object-fit: cover;
         width: 100%;
-        height: 100px;
+        height: 120px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -222,17 +268,29 @@
     
     footer {
         background-color: #F2F2F2;
+        padding: 10px;
     }
     
-    footer h3 {}
+    footer h3 {
+        margin: 10px
+    }
     
-    footer h3,
     footer ul {}
-    /* ipad 
     
-    @media screen and (min-width: 786px) {}
-    
-    
-    @media screen and (min-width: 1024px) {}
-    
-    */
+    @media screen and (min-width: 768px) {
+        .header {
+            display: flex;
+            gap: 20px;
+            color: #0065FC;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 10px
+        }
+        .header img {
+            width: 10%;
+        }
+        /* desktop
+
+@media screen and (min-width: 1024px) {}
+
+*/
