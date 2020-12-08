@@ -1,7 +1,6 @@
     * {
         font-family: Raleway;
         box-sizing: border-box;
-        margin: 15px 15px 15px
     }
     
     img {
@@ -67,56 +66,35 @@
     .fa-search {
         background-color: #0065FC;
         color: white;
-        padding: 40px;
-        padding-left: 50px;
         font-size: 50px;
         border-radius: 35px;
     }
     
-    .filters {
-        font-size: 40px;
-        margin: 20px;
-    }
+    .filters {}
     
     .filtersBtns {
         display: flex;
-        justify-content: normal;
-        align-items: center;
         flex-wrap: wrap;
     }
     
     .circle {
-        padding: 40px;
+        padding: 20px;
         background-color: #DEEBFF;
         color: #0065FC;
-        border-radius: 150px;
+        border-radius: 50px;
         text-align: center;
     }
     
     .btn {
-        border: 3px solid grey;
+        border: 2px solid grey;
         border-radius: 150px;
         width: auto;
         max-height: 140px;
         display: flex;
         align-items: center;
-        /* margin-block: 20px; */
-        margin: 10px 20px;
-    }
-    
-    .title1,
-    .title2,
-    .title3,
-    .title4 {
-        margin-left: 10px;
-        margin-right: 20px;
-        font-size: 48px;
-        font-weight: bold;
     }
     
     .descriptionFilters {
-        margin: 20px;
-        font-size: 40px;
         justify-content: space-between;
     }
     
@@ -126,66 +104,44 @@
     
     .mostPopular {
         background-color: #F2F2F2;
-        font-size: 50px;
     }
     
     .titlePopular {
-        padding: 40px;
-        margin-top: 50px;
-        font-size: 50px;
+        margin: 10px;
+        display: flex;
         align-items: center;
         justify-content: space-between;
     }
     /* Cards most popular */
     
     .mostPopular .card {
-        justify-content: space-between;
-        height: 400px;
-        margin: 35px;
-        border-radius: 50px;
+        border-radius: 25px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
+        display: flex
     }
     
     .mostPopular .imgCard {
-        padding: 10px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        width: 400px;
-        height: 360px;
-        background-size: auto;
+        width: 150px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        object-fit: cover;
+        height: 130px;
     }
     
     .mostPopular .contentCard {
         text-align: left;
-        justify-content: center;
     }
     
-    .mostPopular .contentCard h4 {
-        margin-block-start: 15px;
-        margin-block-end: 15px;
-        margin-left: 15px;
-        font-size: 52px;
-    }
+    .mostPopular .contentCard h4 {}
     
-    .mostPopular .contentCard span {
-        font-size: 40px;
-        margin-left: 15px;
-        text-align: left;
-    }
-    
-    .mostPopular .rattingStars {
-        margin-left: 15px;
-        margin-top: 130px;
-        color: #0065FC;
-    }
+    .mostPopular .contentCard span {}
     
     .mostPopular .fa-star {
-        font-size: 40px;
+        font-size: 15px;
     }
     
     .titleSectionOne h4 {
-        margin: 20px;
         font-weight: bold;
     }
     /*Cards section one */
@@ -195,84 +151,43 @@
     }
     
     .sectionOne h3 {
-        font-size: 60px;
         font-weight: bold;
         margin: 30px;
     }
     
     .sectionOne .card {
-        height: 550px;
-        margin: 35px;
-        border-radius: 50px;
+        height: 180px;
+        border-radius: 20px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
     }
     /* .sectionOne .imgCard4, */
     
-    .sectionOne .imgCard5,
-    .sectionOne .imgCard6,
-    .sectionOne .imgCard7,
-    .sectionOne .imgCard8,
-    .sectionOne .imgCard9 {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 350px;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-    }
-    
-    .card-img img {
+    .sectionOne .card-img img {
         object-fit: cover;
         width: 100%;
-        height: 350px;
+        height: 100px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
-    /* .sectionOne .imgCard4 {
-        background-image: url(assets/accommodation/cannebiere.jpg);
-    } */
+    /* \/ Configure ratting stars here \/ */
     
-    .sectionOne .imgCard5 {
-        background-image: url(assets/accommodation/hotelduport.jpg);
-    }
-    
-    .sectionOne .imgCard6 {
-        background-image: url(assets/accommodation/hotellesmouettes.jpg);
-    }
-    
-    .sectionOne .imgCard7 {
-        background-image: url(assets/accommodation/hoteldelamer.jpg);
-    }
-    
-    .sectionOne .imgCard8 {
-        background-image: url(assets/accommodation/aubergelepanier.jpg);
-    }
-    
-    .sectionOne .imgCard9 {
-        background-image: url(assets/accommodation/hotelchezamina.jpg);
+    .rattingStars {
+        color: #0065FC;
     }
     
     .sectionOne h4 {
         display: block;
         margin-block-start: 15px;
         margin-block-end: 5px;
-        margin-left: 30px;
-        font-size: 52px;
         font-weight: bold;
     }
     
     .sectionOne span {
-        font-size: 40px;
-        margin-left: 30px;
         text-align: left;
     }
     
-    .sectionOne .rattingStars {
-        margin-left: 30px;
-        color: #0065FC;
-    }
-    
     .seeMore {
-        margin: 35px;
         font-weight: bold;
     }
     /* Cards Section Two */
@@ -282,64 +197,26 @@
     }
     
     .sectionTwo h3 {
-        font-size: 60px;
         font-weight: bold;
-        margin: 30px;
     }
     
     .sectionTwo h4 {
-        display: block;
-        margin-block-start: 15px;
-        margin-block-end: 5px;
-        margin: 60px 30px;
-        font-size: 52px;
         font-weight: bold;
     }
     
     .sectionTwo .card {
-        height: 550px;
-        margin: 35px;
-        border-radius: 50px;
+        height: 180px;
+        border-radius: 20px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
     }
     
-    .sectionTwo .imgCard10,
-    .sectionTwo .imgCard11,
-    .sectionTwo .imgCard12,
-    .sectionTwo .imgCard13,
-    .sectionTwo .imgCard14,
-    .sectionTwo .imgCard15 {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 350px;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-    }
-    
-    .sectionTwo .imgCard10 {
-        background-image: url(assets/activities/vieuxport.jpg);
-    }
-    
-    .sectionTwo .imgCard11 {
-        background-image: url(assets/activities/fortdepomègues.jpg);
-    }
-    
-    .sectionTwo .imgCard12 {
-        background-image: url(assets/activities/ilesdufrioul.jpg);
-    }
-    
-    .sectionTwo .imgCard13 {
-        background-image: url(assets/activities/calanques.jpg);
-    }
-    
-    .sectionTwo .imgCard14 {
-        background-image: url(assets/activities/notredamedelagarde.jpg);
-    }
-    
-    .sectionTwo .imgCard15 {
-        background-image: url(assets/activities/longchamp.jpg);
+    .sectionTwo .card-img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     /*Section footer*/
     
