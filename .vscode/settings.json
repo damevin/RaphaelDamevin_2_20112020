@@ -1,0 +1,9 @@
+{
+    "json.schemas": [
+    ]
+        "editor.formatOnSave": true,
+    "[css]": {
+    "editor.formatOnSave": false
+    }
+
+}

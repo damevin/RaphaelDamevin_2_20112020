@@ -1,296 +1,325 @@
-        * {
-        font-family: Raleway;
-        box-sizing: border-box;
-    }
-    
-    img {
-        width: 100%;
-    }
-    
-    .header {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #0065FC;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    
-    .header img {
-        max-width: 25%;
-    }
-    
-    .headerCategories {
-        display: flex;
-        justify-content: space-around;
-        border-bottom: 2px solid #F2F2F2;
-    }
-    
-    .headerCategories h2 {
-        font-size: 18px;
-    }
-    
-    .title h1 {
-        margin: 0;
-        font-size: 20px;
-        padding: 15px;
-        font-weight: bold;
-    }
-    
-    .title h3 {
-        font-weight: 500;
-        font-size: 15px;
-        margin: 15px;
-    }
-    
-    .searchBar {
-        max-width: 400px;
-        margin: 15px;
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-        border: 2px solid whitesmoke;
-        border-radius: 20px;
-    }
-    
-    .searchBar input {
-        font-weight: bold;
-        color: black;
-        border: none;
-        width: auto;
-    }
-    
-    .fa-map-marker-alt {
-        background-color: whitesmoke;
-        color: black;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        width: 20%;
-        text-align: center;
-        padding: 15px;
-    }
-    
-    .fa-search {
-        background-color: #0065FC;
-        color: white;
-        border-radius: 15px;
-        width: 20%;
-        text-align: center;
-        padding: 15px
-    }
-    
-    .filters {
-        margin: 10px;
-    }
-    
-    .filtersBtns {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px
-    }
-    
-    .filtersBtns span {
-        text-align: center;
-        margin: 15px;
-    }
-    
-    .filtersBtns i {
-        text-align: center;
-        background-color: #DEEBFF;
-        color: #0065FC;
-        border-radius: 100px;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .btn {
-        border: 2px solid grey;
-        border-radius: 150px;
-        min-width: 125px;
-        width: auto;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-    }
-    
-    .descriptionFilters {
-        display: flex;
-        margin: 25px 5px
-    }
-    
-    .descriptionFilters i {
-        color: #0065FC;
-        margin: 10px;
-    }
-    
-    .mostPopular {
-        background-color: #F2F2F2;
-    }
-    
-    .titlePopular {
-        margin: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    /* Cards most popular */
-    
-    .mostPopular .card {
-        border-radius: 25px;
-        background-color: white;
-        filter: drop-shadow(0 0 4px grey);
-        display: flex;
-        margin: 15px
-    }
-    
-    .mostPopular .imgCard {
-        width: 130px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        object-fit: cover;
-        align-items: center;
-        height: 130px;
-    }
-    
-    .mostPopular .contentCard {
-        text-align: left;
-    }
-    
-    .mostPopular .contentCard h4 {
-        margin-left: 8px;
-        margin-bottom: 5px;
-    }
-    
-    .mostPopular .contentCard span {
-        margin-left: 8px;
-        font-size: 14px
-    }
-    
-    .mostPopular .fa-star {
-        font-size: 13px;
-        margin-top: 8px;
-    }
-    
-    .titleSectionOne h4 {
-        font-weight: bold;
-    }
-    /*Cards section one */
-    
-    .sectionOne {
-        margin-top: 50px;
-    }
-    
-    .sectionOne h3 {
-        font-weight: bold;
-        margin: 35px 20px;
-    }
-    
-    .sectionOne .card {
-        height: 180px;
-        border-radius: 20px;
-        background-color: white;
-        filter: drop-shadow(0 0 4px grey);
-        margin: 15px;
-    }
-    /* .sectionOne .imgCard4, */
-    
-    .sectionOne .card-img img {
-        object-fit: cover;
-        width: 100%;
-        height: 100px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    /* \/ Configure ratting stars here \/ */
-    
-    .rattingStars {
-        color: #0065FC;
-        margin-top: 20px;
-        margin-left: 8px;
-    }
-    
-    .sectionOne h4 {
-        margin: 10px;
-        margin-bottom: 3px;
-        font-weight: bold;
-        font-size: 18px
-    }
-    
-    .sectionOne span {
-        text-align: left;
-        margin: 10px;
-        font-size: 15px
-    }
-    
-    .sectionOne .rattingStars {
-        color: #0065FC;
-        margin-top: 5px;
-        margin-left: 10px
-    }
-    
-    .seeMore {
-        font-weight: bold;
-        margin: 15px;
-    }
-    /* Cards Section Two */
-    
-    .sectionTwo {
-        margin-top: 50px;
-    }
-    
-    .sectionTwo h3 {
-        font-weight: bold;
-        margin: 35px 20px;
-    }
-    
-    .sectionTwo h4 {
-        font-weight: bold;
-        margin: 20px 20px
-    }
-    
-    .sectionTwo .card {
-        margin: 15px;
-        height: 180px;
-        border-radius: 20px;
-        background-color: white;
-        filter: drop-shadow(0 0 4px grey);
-    }
-    
-    .sectionTwo .card-img img {
-        object-fit: cover;
-        width: 100%;
-        height: 120px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    /*Section footer*/
-    
-    footer {
-        background-color: #F2F2F2;
-        padding: 10px;
-    }
-    
-    footer h3 {
-        margin: 10px
-    }
-    
-    footer ul {}
-    
-    @media screen and (min-width: 768px) {
-        .header {
-            display: flex;
-            gap: 20px;
-            color: #0065FC;
-            font-size: 10px;
-            font-weight: bold;
-            margin: 10px
-        }
-        .header img {
-            width: 10%;
-        }
-        /* desktop
-
-@media screen and (min-width: 1024px) {}
-
-*/
+                        * {
+                        font-family: Raleway;
+                        box-sizing: border-box;
+                    }
+                    
+                    img {
+                        width: 100%;
+                    }
+                    
+                    .header {
+                        padding: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: #0065FC;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    
+                    .header img {
+                        max-width: 25%;
+                    }
+                    
+                    .headerCategories {
+                        display: flex;
+                        justify-content: space-around;
+                        border-bottom: 2px solid #F2F2F2;
+                    }
+                    
+                    .headerCategories h2 {
+                        font-size: 18px;
+                    }
+                    
+                    .title h1 {
+                        margin: 15px;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    
+                    .title h3 {
+                        font-weight: 500;
+                        font-size: 15px;
+                        margin: 15px;
+                    }
+                    
+                    .searchBar {
+                        max-width: 400px;
+                        margin: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        height: 50px;
+                        border: 2px solid whitesmoke;
+                        border-radius: 20px;
+                    }
+                    
+                    .searchBar input {
+                        font-weight: bold;
+                        color: black;
+                        border: none;
+                        width: auto;
+                    }
+                    
+                    .fa-map-marker-alt {
+                        background-color: whitesmoke;
+                        color: black;
+                        border-top-left-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                        width: 20%;
+                        text-align: center;
+                        padding: 15px;
+                    }
+                    
+                    .fa-search {
+                        background-color: #0065FC;
+                        color: white;
+                        border-radius: 15px;
+                        width: 20%;
+                        text-align: center;
+                        padding: 15px
+                    }
+                    
+                    .filters {
+                        margin: 10px;
+                    }
+                    
+                    .filtersBtns {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 9px
+                    }
+                    
+                    .filtersBtns span {
+                        text-align: center;
+                        margin: 15px;
+                    }
+                    
+                    .filtersBtns i {
+                        text-align: center;
+                        background-color: #DEEBFF;
+                        color: #0065FC;
+                        border-radius: 100px;
+                        text-align: center;
+                        padding: 20px;
+                    }
+                    
+                    .btn {
+                        border: 2px solid grey;
+                        border-radius: 150px;
+                        min-width: 125px;
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+                    }
+                    
+                    .descriptionFilters {
+                        display: flex;
+                        margin: 25px 5px
+                    }
+                    
+                    .descriptionFilters i {
+                        color: #0065FC;
+                        margin: 10px;
+                    }
+                    
+                    .mostPopular {
+                        background-color: #F2F2F2;
+                    }
+                    
+                    .titlePopular {
+                        margin: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    /* Cards most popular */
+                    
+                    .mostPopular .card {
+                        border-radius: 25px;
+                        background-color: white;
+                        filter: drop-shadow(0 0 4px grey);
+                        display: flex;
+                        margin: 15px
+                    }
+                    
+                    .mostPopular .imgCard {
+                        width: 130px;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        object-fit: cover;
+                        align-items: center;
+                        height: 130px;
+                    }
+                    
+                    .mostPopular .contentCard {
+                        text-align: left;
+                    }
+                    
+                    .mostPopular .contentCard h4 {
+                        margin-left: 8px;
+                        margin-bottom: 5px;
+                    }
+                    
+                    .mostPopular .contentCard span {
+                        margin-left: 8px;
+                        font-size: 14px
+                    }
+                    
+                    .mostPopular .fa-star {
+                        font-size: 13px;
+                        margin-top: 8px;
+                    }
+                    
+                    .titleSectionOne h4 {
+                        font-weight: bold;
+                    }
+                    /*Cards section one */
+                    
+                    .sectionOne {
+                        margin-top: 50px;
+                    }
+                    
+                    .sectionOne h3 {
+                        font-weight: bold;
+                        margin: 35px 20px;
+                    }
+                    
+                    .sectionOne .card {
+                        height: 180px;
+                        border-radius: 20px;
+                        background-color: white;
+                        filter: drop-shadow(0 0 4px grey);
+                        margin: 15px;
+                    }
+                    /* .sectionOne .imgCard4, */
+                    
+                    .sectionOne .card-img img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                    /* \/ Configure ratting stars here \/ */
+                    
+                    .rattingStars {
+                        color: #0065FC;
+                        margin-top: 20px;
+                        margin-left: 8px;
+                    }
+                    
+                    .sectionOne h4 {
+                        margin: 10px;
+                        margin-bottom: 3px;
+                        font-weight: bold;
+                        font-size: 18px
+                    }
+                    
+                    .sectionOne span {
+                        text-align: left;
+                        margin: 10px;
+                        font-size: 15px
+                    }
+                    
+                    .sectionOne .rattingStars {
+                        color: #0065FC;
+                        margin-top: 5px;
+                        margin-left: 10px
+                    }
+                    
+                    .seeMore {
+                        font-weight: bold;
+                        margin: 15px;
+                    }
+                    /* Cards Section Two */
+                    
+                    .sectionTwo {
+                        margin-top: 50px;
+                    }
+                    
+                    .sectionTwo h3 {
+                        font-weight: bold;
+                        margin: 35px 20px;
+                    }
+                    
+                    .sectionTwo h4 {
+                        font-weight: bold;
+                        margin: 20px 20px
+                    }
+                    
+                    .sectionTwo .card {
+                        margin: 15px;
+                        height: 180px;
+                        border-radius: 20px;
+                        background-color: white;
+                        filter: drop-shadow(0 0 4px grey);
+                    }
+                    
+                    .sectionTwo .card-img img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 120px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                    /*Section footer*/
+                    
+                    footer {
+                        background-color: #F2F2F2;
+                        padding: 10px;
+                    }
+                    
+                    footer h3 {
+                        margin: 10px
+                    }
+                    
+                    footer ul {}
+                    
+                    .headerNavLink {
+                        display: none;
+                    }
+                    
+                    a[data-active=true] {
+                        color: #0065FC;
+                        border-bottom: 2px solid #0065FC;
+                    }
+                    
+                    .headerNavLinksMobile {
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 15px;
+                        border-bottom: 2px solid grey;
+                    }
+                    
+                    @media screen and (min-width: 768px) {
+                        .header {
+                            display: flex;
+                        }
+                        .header img {
+                            width: 10%;
+                        }
+                        .headerNavLink,
+                        .headerSignp {
+                            display: inline;
+                            padding: 30px;
+                        }
+                        .headerNavLinksMobile {
+                            display: none;
+                        }
+                        .titlePopular {
+                            margin: 0px 20px;
+                        }
+                        .mostPopular {
+                            padding: 12px;
+                            max-width: 100%;
+                            border-radius: 15px;
+                        }
+                        .sectionOne {
+                            max-width: 55%;
+                        }
+                        @media screen and (min-width: 1024px) {}
+                        .hosting {
+                            display: flex;
+                            align-items: stretch;
+                        }
