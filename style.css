@@ -2,6 +2,7 @@
 body {
     font-family: Raleway, serif;
     box-sizing: border-box;
+    max-width: 1440px;
 }
 
 /* Animations configuration for articles */
@@ -371,7 +372,7 @@ footer li {
     .mostPopular nav {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+
         flex-wrap: nowrap;
 
     }
@@ -394,15 +395,15 @@ footer li {
 
     /* changes for sectionOne */
     .sectionOne {
-        margin: 0px
+        margin: 0 20 0 0px;
     }
     .sectionOne nav {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: space-around;
     }
     .sectionOne .card {
-        width: 350px
+        width: 350px;
     }
 
     /*changes for sectionTwo */
@@ -410,6 +411,7 @@ footer li {
     .sectionTwoCards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .sectionTwo .card {
         width: 350px
@@ -430,55 +432,44 @@ footer li {
         padding: 4px
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1439px) {
     body {
-        margin: 0 50px;
-    }
-
-    .header {
-        padding: 14px
-    }
-    .header img {
-        width: 10%
+        margin: auto
     }
     .hosting {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         flex-direction: row-reverse;
     }
     .mostPopular {
-        min-width: 30%;
+        min-width: 20%;
         display: flex;
         flex-direction: column;
     }
     .mostPopular .card {
         display: flex;
-        height: auto;
         border-radius: 25px;
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
         margin: 15px;
-        width: auto
+    }
+    .mostPopular h4 {
+        margin:10px;
+        font-size: 15px
     }
     .sectionOne {
-        padding: 5px;
         background: #F2F2F2;
         border-radius: 15px;
-        margin-top: 0;
-        margin-right: 30px;
-        margin-left: 20px;
     }
-    .sectionOneCards nav{
+    .sectionOneCards {
         display: flex;
         flex-flow: wrap;
         align-items: center;
-        justify-content: space-evenly;
-        width: 10%;
-
+        justify-content: space-around;
+        flex-grow: 1;
     }
-    .sectionOne .card{
-        width: 150px;
-        min-height:200px;
+    .sectionOneCards .card {
+        width: 100px;
     }
 
     .sectionOne h3 {
