@@ -325,6 +325,10 @@ footer ul {
 footer li {
     padding: 4px
 }
+footer a {
+    text-decoration: none;
+    color: black
+}
 
 @media screen and (min-width: 768px) {
     /*  Changes for header section  */
@@ -416,17 +420,20 @@ footer li {
     /*changes for sectionTwo */
 
     .sectionTwoCards {
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .sectionTwo .card1,
     .sectionTwo .card2,
     .sectionTwo .card3,
     .sectionTwo .card4,
     .sectionTwo .card5,
     .sectionTwo .card6 {
-        width: auto
+        width: auto;
+
     }
     footer {
         text-align: left ;
@@ -443,6 +450,7 @@ footer li {
     li {
         padding: 4px
     }
+
 }
 
 @media screen and (min-width: 1439px) {
@@ -452,11 +460,16 @@ footer li {
     .headerNav{
         margin-top: 18px;
     }
+    .header img {
+        width: 10%
+    }
+    /* Section hébergements (populaire et hébergements inclus)*/
     .hosting {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
     }
+    /* Les plus populaires */
     .mostPopular {
         min-width: 22%;
         display: flex;
@@ -479,6 +492,7 @@ footer li {
         margin:10px;
         font-size: 15px
     }
+    /* Hébergements à Marseille*/
     .sectionOne {
         margin-right: 20px;
         background: #F2F2F2;
@@ -505,6 +519,11 @@ footer li {
     .sectionOne h5:hover {
         text-decoration: underline;
         cursor: pointer
+    }
+
+    /* Activités à Marseille*/
+    .sectionTwo {
+        margin-bottom: 50px;
     }
 
     .sectionTwoCards {
