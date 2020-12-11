@@ -4,6 +4,7 @@
     <list default="true" id="4432ea82-55c9-4b0a-81a6-e43a5942b29d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,10 @@
       <option name="presentableId" value="Default" />
       <updated>1607585170702</updated>
       <workItem from="1607585172885" duration="7058000" />
-      <workItem from="1607595193103" duration="17570000" />
+      <workItem from="1607595193103" duration="18169000" />
+      <workItem from="1607669048772" duration="2076000" />
+      <workItem from="1607671135880" duration="4404000" />
+      <workItem from="1607678940029" duration="1409000" />
     </task>
     <servers />
   </component>
@@ -60,5 +64,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

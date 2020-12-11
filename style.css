@@ -8,15 +8,15 @@ body {
 /* Animations configuration for articles */
 article {
     transform-origin: 50% 50%;
-    transition: transform 0.5s linear;
+    transition: transform 0.1s linear;
     cursor: pointer;
 }
 
 article:hover {
     transform: scale(1.02) rotate(0.1deg);
 }
-/* Logo */
 
+/*Imgs configuration*/
 img {
     width: 100%;
 }
@@ -25,7 +25,6 @@ img {
 .header {
     padding: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     color: #0065FC;
     font-size: 14px;
@@ -33,26 +32,24 @@ img {
 }
 
 .header img {
-    max-width: 25%;
+    width: 25%;
 }
 
-
+/* Navigation links for desktop version */
 .headerNavLink {
     display: none;
 }
-
+/* Navigation links for mobileversion */
 .headerNavLinksMobile {
     display: flex;
     justify-content: space-around;
 }
 
-.headerNavLinkMobile1,
-.headerNavLinkMobile2 {
+.headerNavLinkMobile {
     display: flex;
     border-bottom: 2px grey solid ;
-    padding-left: 35px;
-    padding-right: 40px;
-    padding-bottom: 20px;
+    padding: 0px 40px 20px 35px;
+    cursor: pointer;
 }
 .headerNavLinksMobile [data-active=true] {
     color: #0065FC;
@@ -68,11 +65,9 @@ img {
 .title h1 {
     margin: 15px;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .title h3 {
-    font-weight: 500;
     font-size: 15px;
     margin: 15px;
 }
@@ -146,7 +141,6 @@ img {
     border-radius: 100px;
     padding: 20px;
 }
-
 .btn {
     border: 2px solid grey;
     border-radius: 150px;
@@ -155,6 +149,12 @@ img {
     display: flex;
     align-items: center;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0065FC;
+    color: white
 }
 
 .descriptionFilters {
@@ -235,7 +235,6 @@ img {
     background-color: white;
     filter: drop-shadow(0 0 4px grey);
     margin: 15px;
-    min-width: 290px;
 }
 
 .sectionOne .card-img img {
@@ -289,10 +288,13 @@ img {
     margin: 20px 20px
 }
 
-.sectionTwo .card {
+.sectionTwo .card1,
+.sectionTwo .card2,
+.sectionTwo .card3,
+.sectionTwo .card4,
+.sectionTwo .card5,
+.sectionTwo .card6 {
     margin: 15px;
-    height: 180px;
-    min-width: 290px;
     border-radius: 20px;
     background-color: white;
     filter: drop-shadow(0 0 4px grey);
@@ -300,8 +302,7 @@ img {
 
 .sectionTwo .card-img img {
     object-fit: cover;
-    width: 100%;
-    height: 120px;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -327,8 +328,14 @@ footer li {
 
 @media screen and (min-width: 768px) {
     /*  Changes for header section  */
+    .body {
+        margin: auto
+    }
     .header {
         padding: 14px
+    }
+    .headerNav{
+        margin-top: 18px;
     }
     .header img {
         width: 15%;
@@ -395,7 +402,7 @@ footer li {
 
     /* changes for sectionOne */
     .sectionOne {
-        margin: 0 20 0 0px;
+        margin: 0;
     }
     .sectionOne nav {
         display: flex;
@@ -413,8 +420,13 @@ footer li {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .sectionTwo .card {
-        width: 350px
+    .sectionTwo .card1,
+    .sectionTwo .card2,
+    .sectionTwo .card3,
+    .sectionTwo .card4,
+    .sectionTwo .card5,
+    .sectionTwo .card6 {
+        width: auto
     }
     footer {
         text-align: left ;
@@ -432,9 +444,13 @@ footer li {
         padding: 4px
     }
 }
+
 @media screen and (min-width: 1439px) {
     body {
         margin: auto
+    }
+    .headerNav{
+        margin-top: 18px;
     }
     .hosting {
         display: flex;
@@ -442,7 +458,7 @@ footer li {
         flex-direction: row-reverse;
     }
     .mostPopular {
-        min-width: 20%;
+        min-width: 22%;
         display: flex;
         flex-direction: column;
     }
@@ -452,14 +468,22 @@ footer li {
         background-color: white;
         filter: drop-shadow(0 0 4px grey);
         margin: 15px;
+        height: 120px;
+    }
+    .mostPopular .imgCard {
+        height: 113px;
+        width: 130px;
+        margin: 2px;
     }
     .mostPopular h4 {
         margin:10px;
         font-size: 15px
     }
     .sectionOne {
+        margin-right: 20px;
         background: #F2F2F2;
         border-radius: 15px;
+        padding: 20px
     }
     .sectionOneCards {
         display: flex;
@@ -469,10 +493,56 @@ footer li {
         flex-grow: 1;
     }
     .sectionOneCards .card {
-        width: 100px;
+        height: auto;
+        padding: 2px;
+        margin: 20px 10px;
+        width: 320px;
+    }
+    .sectionOne h3,
+    .sectionOne h5 {
+        margin: 15px 18px;
+    }
+    .sectionOne h5:hover {
+        text-decoration: underline;
+        cursor: pointer
     }
 
-    .sectionOne h3 {
-        margin: 15px 18px;
+    .sectionTwoCards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    }
+
+    .card1 {
+        grid-row: 2/7;
+        grid-column: 1/2;
+    }
+    .card2 {
+        grid-column: 2/3;
+        grid-row: 2/5;
+    }
+    .card3 {
+        grid-column: 3/4;
+        grid-row: 2/7;
+
+    }
+    .card4 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+
+    }
+    .card5 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+
+    }
+    .card6 {
+        grid-column: 4/5;
+        grid-row: 4/7;
+    }
+
+
+    .footer {
+        width: 100%;
     }
 }
