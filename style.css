@@ -21,8 +21,6 @@ article:hover {
 img {
     width: 100%;
 }
-
-
 /* Header configuration */
 .header {
     align-items: center;
@@ -32,19 +30,16 @@ img {
     font-weight: bold;
     justify-content: space-between;
     padding: 30px;
-
-
 }
 /* Logo Size configuration */
 .header img {
     width: 80px;
 }
-
 /* Navigation links for desktop version */
 .header-navigation-links {
+    color: grey;
     display: none;
     text-decoration: none;
-    color: grey;
 }
 .header-navigation-links:hover {
     color: #0065FC;
@@ -54,13 +49,13 @@ img {
 .header-navigation-links-mobile {
     display: flex;
     justify-content: space-around;
+    padding: 10px 48px;
     text-decoration: none;
-    padding: 10 35px;
 }
 .header-navigation-links-mobile [data-active=true] {
+    border-bottom: 2px solid #0065FC;
     color: #0065FC;
     text-decoration: none;
-    border-bottom: 2px solid #0065FC;
 }
 .header-navigation-links-mobile [data-active=false] {
     color: grey;
@@ -69,6 +64,7 @@ img {
 .header-signup {
     color: #0065FC;
     display: inline;
+    text-decoration: none;
 }
 .header-signup:hover {
     text-decoration: underline;
@@ -76,8 +72,8 @@ img {
 /* Title & Subtitle */
 
 .title h1 {
-    margin: 10px;
     font-size: 20px;
+    margin: 10px;
 }
 
 .title h3 {
@@ -87,27 +83,28 @@ img {
 /* Search bar configuration */
 
 .searchbar {
-    margin: 30px 5px;
-    width: 305px;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    border: 2px solid whitesmoke;
     border-radius: 20px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin: 30px 5px;
+    max-width: 400px;
+    min-width: 305px;
 }
 
 .searchbar input {
-    font-weight: bold;
     border: none;
+    font-weight: bold;
     padding-left: 10px;
     width: 100%;
 }
 
 .fa-map-marker-alt {
     background-color: whitesmoke;
-    color: black;
-    border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: black;
     font-size: 20px;
     padding: 15px;
 }
@@ -117,11 +114,11 @@ img {
 
 .fa-search {
     background-color: #0065FC;
-    color: white;
     border-radius: 15px;
-    text-align: center;
-    padding: 15px;
+    color: white;
     cursor: pointer;
+    padding: 15px;
+    text-align: center;
 }
 .fa-search:hover {
     background-color: #DEEBFF;
@@ -146,24 +143,24 @@ img {
 }
 
 .btn i {
-    font-size: 20px;
     background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 12px;
     border-radius: 100%;
-    margin: -2px;
     border: 1px solid #DEEBFF;
+    color: #0065FC;
+    font-size: 20px;
+    margin: -2px;
+    padding: 12px;
 }
 .btn {
-    border: 2px solid #ccc;
-    border-radius: 50px;
-    height: 40px;
-    display: flex;
     align-items: center;
-    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #ccc;
     cursor: pointer;
-    margin-left: 9px;
+    display: flex;
+    font-weight: bold;
+    height: 40px;
     margin-bottom: 9px;
+    margin-left: 9px;
 }
 
 .btn:hover {
@@ -173,9 +170,6 @@ img {
 
 .description-filters {
     margin: 25px 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: ;
 }
 
 .description-filters i {
@@ -192,50 +186,54 @@ img {
 }
 
 .title-popular-section {
-    margin: 18px;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    margin: 18px;
 }
 
 /* Cards most popular */
 
 .most-popular .card {
-    border-radius: 25px;
     background-color: white;
-    filter: drop-shadow(0 0 4px #ccc);
+    border-radius: 25px;
     display: flex;
+    filter: drop-shadow(0 0 4px #ccc);
+    height: 120px;
     margin: 15px;
     width:auto;
-    height: 120px
 }
 
 .most-popular .imgCard {
-    width: 128px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
     align-items: center;
-    height: 113px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     border: 2px solid white;
+    height: 113px;
+    object-fit: cover;
+    width: 128px;
 }
 
 .most-popular .contentCard h4 {
     margin-left: 8px;
     margin-bottom: 5px;
 }
+.most-popular h3 {
+    margin: 35px 5px 43px
+
+}
 
 .most-popular .contentCard span {
+    font-size: 14px;
     margin-left: 8px;
-    font-size: 14px
 }
 .most-popular .ratting-stars {
     margin-left: 10px;
 }
 .most-popular .fa-star {
+    color: #0065FC;
     font-size: 13px;
     margin-top: 8px;
-    color: #0065FC;
 }
 .fa-star unchecked {
     color: grey;
@@ -255,40 +253,40 @@ img {
 
 
 .section-one .card {
-    height: 180px;
-    border-radius: 20px;
     background-color: white;
-    filter: drop-shadow(0 0 4px grey);
+    border-radius: 20px;
+    filter: drop-shadow(0 0 4px #ccc);
+    height: 180px;
     margin: 15px;
 }
 
 .section-one .card-img img {
-    padding: 5px;
-    object-fit: cover;
-    width: 97%;
-    height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 100px;
+    object-fit: cover;
+    padding: 5px;
+    width: 97%;
 }
 
 .section-one h4 {
-    margin: 10px;
-    margin-bottom: 3px;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 16px
+    margin-bottom: 3px;
+    margin: 10px;
 }
 
 .section-one span {
-    text-align: left;
+    font-size: 13px;
     margin: 10px;
-    font-size: 13px
+    text-align: left;
 }
 
 .section-one .ratting-stars {
     color: #0065FC;
-    margin-top: 5px;
-    margin-left: 10px;
     font-size: 9px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 /* \/ Configure ratting stars here \/ */
@@ -297,11 +295,11 @@ img {
 /* Cards Section Two */
 
 .section-two {
-    margin: 0px;
     display: grid;
-    row-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 180px 180px 180px 180px 180px 180px 30px;
+    margin: 0px;
+    row-gap: 30px;
 }
 .section-two h4 {
     margin: 0;
@@ -322,17 +320,17 @@ img {
 }
 
 .section-two .card-img img{
-    object-fit: cover;
-    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section-two .content-card {
     background-color: white;
-    padding: 15px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 15px;
 }
 /*Section footer*/
 
@@ -341,27 +339,23 @@ footer {
     padding: 20px;
     list-style:none;
 }
-
-
 footer ul {
-    font-weight: bolder;
     margin:10px 0px;
     padding:0;
+    font-weight: bold;
 }
-
 footer li {
-    padding: 4px
+    padding: 4px;
+    font-weight: lighter;
 }
 footer a {
     text-decoration: none;
-    color: black
+    color: black;
 }
-
 @media screen and (min-width: 768px) {
     /*  Changes for header section  */
     .body {
-        margin: auto;
-        margin-left: 20px;
+        margin: auto
     }
     .header {
         padding: 14px
@@ -387,29 +381,18 @@ footer a {
         flex-wrap: nowrap;
         height: 60px
     }
-
     /* Changes for most-popular */
     .title-popular-section {
-        margin: 0px 18px;
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: space-between;
+        margin: 0px 18px;
     }
     .most-popular {
         border-radius: 15px;
     }
     .most-popular .card {
         width: auto;
-    }
-    .most-popular nav {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-
-    }
-    .most-popular .fa-star {
-        font-size: 10px;
-        margin-top: 2px;
     }
     .most-popular .imgCard {
         height: 110px;
@@ -418,11 +401,9 @@ footer a {
         font-size: 12px;
         margin-right: 8px;
     }
-
     .most-popular .contentCard span {
         font-size: 11px
     }
-
     /* changes for sectionOne */
     .section-one {
         margin: 0;
@@ -435,17 +416,14 @@ footer a {
     .section-one .card {
         width: 350px;
     }
-
     /*changes for section-two */
-
     .section-two {
         display: grid;
-        row-gap: 40px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 150px 150px 150px 50px;
+        row-gap: 40px;
 
     }
-
     .section-two .card1,
     .section-two .card2,
     .section-two .card3,
@@ -471,7 +449,6 @@ footer a {
     li {
         padding: 4px
     }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -481,6 +458,10 @@ footer a {
     }
     .header img {
         width: 100px
+    }
+    .header-navigation-links,
+    .header-signup {
+        padding: 30px;
     }
     .fa-search {
         display: none;
@@ -501,92 +482,75 @@ footer a {
         flex-direction: column;
     }
     .most-popular .card {
-        display: flex;
-        border-radius: 25px;
         background-color: white;
+        border-radius: 25px;
+        display: flex;
         filter: drop-shadow(0 0 4px grey);
-        margin: 15px;
         height: 120px;
+        margin: 5px;
     }
     .most-popular .imgCard {
-        height: 113px;
+        height: 112px;
         width: 100px;
     }
     .most-popular h4 {
-        margin:10px;
-        font-size: 15px
+        font-size: 14px;
+        margin: 10px;
     }
     /* Hébergements à Marseille*/
     .section-one {
-        margin-right: 20px;
         background: #F2F2F2;
         border-radius: 15px;
+        margin-right: 20px;
         padding: 2px
     }
     .section-one-cards {
+        align-items: center;
         display: flex;
         flex-flow: wrap;
-        align-items: center;
         justify-content: space-around;
-        flex-grow: 1;
     }
     .section-one-cards .card {
-        padding: 2px;
         margin: 20px 10px;
         width: 270px;
     }
-    .section-one h3,
-    .section-one h5 {
-        margin: 15px 18px;
-    }
     .section-one h5:hover {
+        cursor: pointer;
         text-decoration: underline;
-        cursor: pointer
     }
 
     /* Activités à Marseille*/
 
     .section-two {
         display: grid;
-        row-gap: 10px;
-        margin-bottom: 50px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+        margin-bottom: 50px;
+        row-gap: 10px;
     }
 
     .card1 {
-        height: auto;
-        grid-row: 2/7;
         grid-column: 1/2;
+        grid-row: 2/7;
     }
     .card2 {
-        height: auto;
         grid-column: 2/3;
         grid-row: 2/5;
     }
     .card3 {
-        height: auto;
         grid-column: 3/4;
         grid-row: 2/7;
-
     }
     .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
-
     }
     .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
-
     }
     .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
     }
-
-    .footer {
-        position: absolute;
-    }
-
 }
