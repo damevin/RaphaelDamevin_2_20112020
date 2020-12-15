@@ -337,13 +337,18 @@ img {
 .section-two .content-card {
     padding: 5px;
 }
+.section-two-cards {
+    display: grid;
+    grid-template-rows: 180px 180px 180px 180px 180px 180px;
+    row-gap: 15px;
+}
 
 .section-two img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 120px;
     object-fit: cover;
     overflow: hidden;
+    height: 140px;
 }
 
 .section-two .card1,
@@ -352,6 +357,7 @@ img {
 .section-two .card4,
 .section-two .card5,
 .section-two .card6 {
+    height: 100%;
     background-color: white;
     border-radius: 15px;
     filter: drop-shadow(0 0 4px #ccc);
@@ -468,6 +474,10 @@ footer a {
     .section-two-cards {
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-template-rows: 180px 180px 180px 50px;
+    }
+    .section-two-cards a {
+        height: 100%;
     }
     /* changes for footer section*/
     footer {
@@ -500,7 +510,7 @@ footer a {
         max-width: 1240px;
         margin: auto
     }
-/*** changes for header section ***/
+    /*** changes for header section ***/
     .header img {
         width: 100px
     }
@@ -511,7 +521,7 @@ footer a {
     .header-signup-mobile {
         display: none;
     }
-/***** Changes for searchbar *********/
+    /***** Changes for searchbar *********/
     .fa-search {
         display: none;
     }
@@ -525,7 +535,7 @@ footer a {
         padding: 15px;
         text-decoration: none;
     }
-/*** Changes for section 1 and most popular (hosting section) ******/
+    /*** Changes for section 1 and most popular (hosting section) ******/
     .hosting {
         display: flex;
         flex-direction: row-reverse;
@@ -600,51 +610,66 @@ footer a {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 224px 32px 32px 32px 224px 50px;
-        row-gap: 30px;
+        row-gap: 0px;
+        column-gap: 10px;
     }
-
+    .section-two h4 {
+        font-size: 17px;
+        padding: 10px
+    }
     .section-two img {
+        height: 100%;
         width: 100%;
-        height: auto;
+    }
+    .section-two a {
+        transform-origin: 50% 50%;
+        transition: transform 0.1s linear;
+    }
+    .section-two a:hover {
+        transform: scale(1.02) rotate(0.1deg);
     }
 
-    a .card1,
-    a .card2,
-    a .card3,
-    a .card4,
-    a .card5,
-    a .card6 {
-        width: 100%;
-        height: auto;
-    }
-
-    .card1  {
-        grid-column: 1/2;
+    .section-two-cards .card1 {
         grid-row: 2/7;
+        grid-column: 1/2;
     }
-
-    .card2 {
+    .section-two-cards .card1 .card-img {
+        height: 90%
+    }
+    .section-two-cards .card2 {
         grid-column: 2/3;
         grid-row: 2/5;
     }
-
-    .card3 {
+    .section-two-cards .card2 .card-img {
+        height: 80%
+    }
+    .section-two-cards .card3 {
         grid-column: 3/4;
         grid-row: 2/7;
     }
-
-    .card4 {
+    .section-two-cards .card3 .card-img {
+        height: 90%;
+    }
+    .section-two-cards .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
-
-    .card5 {
+    .section-two-cards .card4 .card-img {
+        height: 70%;
+    }
+    .section-two-cards .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
-
-    .card6 {
+    .section-two-cards .card5 .card-img {
+        height: 73%
+    }
+    .section-two-cards .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
     }
+    .section-two-cards .card6 .card-img {
+        height: 80%;
+    }
+
 }
