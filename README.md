@@ -12,7 +12,7 @@ Reservia est un site de plannification de vacances. Leur site permet aux usagers
 
 ## Live demo 
 
-- www.dame.vin/reservia
+- https://damevin.github.io/reservia/.
 
 ## Languages utilisés 
 
