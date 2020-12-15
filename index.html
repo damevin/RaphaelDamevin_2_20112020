@@ -7,7 +7,7 @@
     </script>
     <title>Reservia</title>
     <link href="assets/favicon.png" rel="icon" type="image/png"/>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name='viewport'/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name='viewport'/>
     <meta content="width=device-width" name="viewport"/>
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
 </header>
 <nav class="header-navigation-links-mobile" aria-label="Navigation">
     <a class="header-navigation-links-mobile" data-active="true" href="#section-one">Hébergements</a>
-    <a class="header-navigation-links-mobile" data-active="false" href="#section-two" >Activités</a>
+    <a class="header-navigation-links-mobile" data-active="false" href="#section-two">Activités</a>
 </nav>
 <!-- Title & Subtitle -->
 <div class="title">
@@ -40,8 +40,9 @@
 <!-- Searchbar -->
 <div class="searchbar" aria-label="Barre de recherche">
     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-    <label for="search"></label><input id="search" placeholder="Marseille, France" type="text" aria-label="Écrivez votre recherche ici">
-    <i class="fas fa-search" aria-label="Rechercher"></i>
+    <label for="search"></label><input id="search" placeholder="Marseille, France" type="text"
+                                       aria-label="Écrivez votre recherche ici">
+    <i class="fas fa-search" aria-label="Rechercher" aria-hidden="true"></i>
     <a class="searchbar-text" href="#">Rechercher</a>
 </div>
 <!-- Filters -->
@@ -117,7 +118,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i  class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
                 </a>
@@ -198,7 +199,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" >
+                <a href="#">
                     <div class="card">
                         <div class="card-img">
                             <img alt="Hotel de la mer" src="assets/accommodation/hoteldelamer.jpg"/>
@@ -216,10 +217,10 @@
                         </div>
                     </div>
                 </a>
-                <a  href="#">
+                <a href="#">
                     <div class="card">
                         <div class="card-img">
-                            <img alt ="Auberge le panier" src="assets/accommodation/aubergelepanier.jpg"/>
+                            <img alt="Auberge le panier" src="assets/accommodation/aubergelepanier.jpg"/>
                         </div>
                         <div class="content-card">
                             <h4>Auberge Le Panier</h4>
@@ -253,7 +254,7 @@
                     </div>
                 </a>
             </div>
-            <a href="#" aria-label="Afficher plus d'hébergements">Afficher plus</a>
+            <a class="see-more" href="#" aria-label="Afficher plus d'hébergements">Afficher plus</a>
         </section>
     </div>
     <!-- Second section : Activities in city-->
@@ -304,9 +305,9 @@
                 <div class="card5">
                     <div class="card-img">
                         <img alt="Notre-Dame-de-la-Garde" src="assets/activities/notredamedelagarde.jpg"/>
-                    </div>
-                    <div class="content-card">
-                        <h4>Notre-Dame-de-la-Garde</h4>
+                        <div class="content-card">
+                            <h4>Notre-Dame-de-la-Garde</h4>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -314,9 +315,9 @@
                 <div class="card6">
                     <div class="card-img">
                         <img alt="Parc Longchamp" src="assets/activities/longchamp.jpg"/>
-                    </div>
-                    <div class="content-card">
-                        <h4>Parc Longchamp</h4>
+                        <div class="content-card">
+                            <h4>Parc Longchamp</h4>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -325,22 +326,28 @@
 </main>
 <!-- Footer -->
 <footer>
-    <div>
-        <ul>A propos</ul>
-        <li><a href="#">Fonctionnement du site</a></li>
-        <li><a href="#">Conditions générales de vente</a></li>
-        <li><a href="#">Données et confidentialité</a></li>
-    </div>
-    <div>
-        <ul>Nos hébergements</ul>
-        <li><a href="#">Charte qualité</a></li>
-        <li ><a href="#">Soumettre votre hôtel</a></li>
-    </div>
-    <div>
-        <ul>Assistance</ul>
-        <li><a href="#">Centre d'aide</a></li>
-        <li><a href="#">Nous contacter</a></li>
-    </div>
+    <section>
+        <h2>A propos</h2>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Nos hébergements</h2>
+        <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Assistance</h2>
+        <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </section>
 </footer>
 </body>
 

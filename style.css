@@ -4,10 +4,12 @@ body {
     font-family: Raleway, serif;
     max-width: 1440px;
 }
+
 /*Imgs configuration*/
 img {
     width: 100%;
 }
+
 /* Header configuration */
 .header {
     align-items: center;
@@ -18,14 +20,17 @@ img {
     justify-content: space-between;
     padding: 30px;
 }
+
 .header a {
     text-decoration: none;
     color: #0065FC;
 }
-/* Logo Size configuration */
+
+/* Logo Size configuration for mobile version*/
 .header img {
     width: 80px;
 }
+
 /* Navigation links for desktop version */
 .header-navigation-links {
     display: none;
@@ -38,23 +43,28 @@ img {
     padding: 9px 36px;
     text-decoration: none;
 }
+
 .header-navigation-links-mobile [data-active=true] {
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
     text-decoration: none;
 }
+
 .header-navigation-links-mobile [data-active=false] {
     border-bottom: 2px solid grey;
     color: grey;
 }
+
 .header-signup {
     color: #0065FC;
     display: initial;
     text-decoration: none;
 }
+
 .header-signup:hover {
     text-decoration: underline;
 }
+
 /* Title & Subtitle */
 
 .title h1 {
@@ -66,7 +76,8 @@ img {
     font-size: 15px;
     margin: 10px;
 }
-/* Search bar configuration */
+
+/* Search Bar configuration */
 
 .searchbar {
     border-radius: 20px;
@@ -80,7 +91,7 @@ img {
 }
 
 .searchbar input {
-    border:none;
+    border: none;
     padding-left: 10px;
     width: 100%;
 }
@@ -93,6 +104,7 @@ img {
     font-size: 20px;
     padding: 15px;
 }
+
 .searchbar-text {
     display: none;
 }
@@ -105,28 +117,33 @@ img {
     padding: 15px;
     text-align: center;
 }
+
 .fa-search:hover {
     background-color: #DEEBFF;
 }
 
-/* Filters configuration */
+/* Filters */
 
 .filters h3 {
     margin: 10px
 }
+
 .filters a {
     color: black;
     text-decoration: none;
 }
+
 .filters-buttons {
     display: flex;
     flex-wrap: wrap;
 }
+
 .btn span {
     margin-left: 10px;
     margin: 10px
 }
-.btn:hover span{
+
+.btn:hover span {
     text-decoration: #0065FC;
 }
 
@@ -174,13 +191,14 @@ img {
     justify-content: space-between;
     margin: 18px;
 }
-/* Configuration for all the div "most popular" */
 
+/* Most Popular aside*/
 .most-popular {
     background-color: #F2F2F2;
     padding: 5px;
     width: auto;
 }
+
 .most-popular .card {
     background-color: white;
     border-radius: 25px;
@@ -191,8 +209,9 @@ img {
     text-decoration: none;
     transform-origin: 50% 50%;
     transition: transform 0.1s linear;
-    width:auto;
+    width: auto;
 }
+
 .most-popular a:hover {
     color: black;
     text-decoration: none;
@@ -208,6 +227,7 @@ img {
     object-fit: cover;
     width: 128px;
 }
+
 .most-popular .card .content-card {
     padding-top: 15px
 }
@@ -227,24 +247,29 @@ img {
 .most-popular .ratting-stars {
     margin-left: 10px;
 }
+
 .most-popular .fa-star {
     color: #0065FC;
     font-size: 13px;
     margin-top: 8px;
 }
 
-/*
-    SECTION ONE
-    CONFIGURATION
-    FOR MOBILE
-*/
+/* section one */
 .section-one h3 {
     margin: 35px 20px;
-    }
+}
+
 .section-one a {
     text-decoration: none;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
 }
-/* Style of cards*/
+
+.section-one a:hover {
+    transform: scale(1.02) rotate(0.1deg);
+}
+
+/* style of cards*/
 .section-one .card {
     text-decoration: none;
     color: black;
@@ -255,6 +280,7 @@ img {
     margin: 15px;
     filter: drop-shadow(0 0 4px #ccc)
 }
+
 .section-one .content-card {
     height: 70px;
     margin-top: 0;
@@ -262,12 +288,15 @@ img {
     margin-left: 10px;
     margin-bottom: 0;
 }
+
 .section-one .content-card h4 {
     margin: 0px
 }
+
 .section-one .content-card span {
     font-size: 12px;
 }
+
 .section-one img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -276,105 +305,121 @@ img {
     padding: 5px;
     width: 97%;
 }
+
 .section-one .ratting-stars {
     color: #0065FC;
     font-size: 9px;
     margin-top: 5px;
 }
 
-/* Cards Section Two */
-.section-two {
+.section-one .see-more {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 }
-.section-two-cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: auto;
-    filter: drop-shadow(0 0 4px #ccc);
-    margin: auto
+
+/***** Section two ****/
+
+.section-two a {
+    color: black;
+    text-decoration: none;
 }
+
+.section-two h3 {
+    margin: 15px
+}
+
+.section-two h4 {
+    margin: 5px
+}
+
+.section-two .content-card {
+    padding: 5px;
+}
+
+.section-two img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .section-two .card1,
 .section-two .card2,
 .section-two .card3,
 .section-two .card4,
 .section-two .card5,
 .section-two .card6 {
-    text-decoration: none;
-    color: black;
     background-color: white;
-    border-radius: 20px;
-    height: 180px;
-    width: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 4px #ccc);
     margin: 15px;
-    filter: drop-shadow(0 0 4px #ccc)
-}
-.section-two a {
-    text-decoration: none;
-    color: black;
-}
-.section-two img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-    height: 120px;
 }
 
-.section-two .content-card {
-    background-color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-left: 15px
-}
-/*Section footer*/
+/************* Footer ****************/
 
 footer {
     background-color: #F2F2F2;
     padding: 20px;
-    list-style:none;
 }
+
 footer ul {
-    margin:10px 0px;
-    padding:0;
-    font-weight: bold;
+    list-style: none;
 }
+
+footer h2 {
+    font-size: 18px
+}
+
 footer li {
     padding: 4px;
-    font-weight: lighter;
 }
+
 footer a {
     text-decoration: none;
     color: black;
 }
+
+/**** mediaquerie for screen < 768px ******/
+
 @media screen and (min-width: 768px) {
-    /*  Changes for header section  */
+
     .body {
         margin: auto
     }
+    /*  Changes for header section  */
     .header {
         padding: 14px
     }
+
     .header img {
         width: 90px;
     }
+
     .header-navigation-links {
         display: inline;
         padding: 25px 10px 0px;
     }
-    .header-navigation-links[data-active=true]{
+
+    .header-navigation-links[data-active=true] {
         color: #0065FC;
         border-top: 2px solid #0065FC;
     }
+
     .header-navigation-links-mobile,
     .header-signup-mobile {
-        display:none
+        display: none
     }
+
     /* Changes for filters */
     .filters-buttons {
         display: flex;
         flex-wrap: nowrap;
         height: 60px
     }
+
     /* Changes for most-popular */
     .title-popular-section {
         align-items: center;
@@ -382,115 +427,124 @@ footer a {
         justify-content: space-between;
         margin: 0px 18px;
     }
+
     .most-popular {
         border-radius: 15px;
     }
+
     .most-popular .card {
         width: auto;
     }
+
     .most-popular .imgCard {
         height: 110px;
     }
+
     .most-popular h4 {
         font-size: 12px;
         margin-right: 8px;
     }
+
     .most-popular .content-card span {
         font-size: 11px
     }
-    /* changes for sectionOne */
+
+    /* changes for section one */
     .section-one {
         margin: 0;
     }
+
     .section-one-cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .section-one .card {
         width: 350px;
     }
+
     /*changes for section-two */
     .section-two-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
-    .section-two h3 {
-        margin: 35px 20px;
-    }
-    .section-two .card1,
-    .section-two .card2,
-    .section-two .card3,
-    .section-two .card4,
-    .section-two .card5,
-    .section-two .card6 {
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        border-radius: 20px;
-        height: 180px;
-        width: 350px;
-        margin: 15px;
-        filter: drop-shadow(0 0 4px #ccc)
-    }
+    /* changes for footer section*/
     footer {
         display: flex;
         justify-content: space-around;
-        list-style:none;
+        list-style: none;
         padding: 20px;
-        text-align: left ;
+        text-align: left;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
     ul {
-        font-weight: bolder;
-        margin:10px 0px;
-        padding:0;
+        margin: 10px 0px;
+        padding: 0;
+        list-style-type: none
     }
+
     li {
+        text-decoration: none;
         padding: 4px
     }
 }
+/**** mediaquerie for screen < 992px ******/
+
 @media screen and (min-width: 992px) {
     body {
         max-width: 1240px;
         margin: auto
     }
+/*** changes for header section ***/
     .header img {
         width: 100px
     }
+
     .header-navigation-links,
     .header-signup {
         padding: 30px;
     }
+
     .header-signup-mobile {
         display: none;
     }
+/***** Changes for searchbar *********/
     .fa-search {
         display: none;
     }
+
     .searchbar-text {
         background-color: #0065FC;
         border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px ;
+        border-top-right-radius: 15px;
         color: white;
         display: inline;
         padding: 15px;
         text-decoration: none;
     }
+/*** Changes for section 1 and most popular (hosting section) ******/
     .hosting {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    /* Les plus populaires */
+
+    /*********** Changes for most popular section *********/
     .title-popular-section {
         padding: 15px;
     }
+
     .most-popular {
         min-width: 22%;
         display: flex;
         flex-direction: column;
     }
+
     .most-popular .card {
         background-color: white;
         border-radius: 25px;
@@ -499,31 +553,37 @@ footer a {
         height: 120px;
         margin: 5px;
     }
+
     .most-popular .imgCard {
         height: 112px;
         width: 100px;
     }
+
     .most-popular h4 {
         font-size: 14px;
         margin: 10px;
     }
-    /* Hébergements à Marseille*/
+
+    /********************** Changes for section one ***********************/
     .section-one {
         background: #F2F2F2;
         border-radius: 15px;
         margin-right: 20px;
         padding: 15px
     }
+
     .section-one-cards {
         align-items: center;
         display: flex;
         flex-flow: wrap;
         justify-content: space-around;
     }
+
     .section-one-cards .card {
         margin: 20px 10px;
         width: 270px;
     }
+
     .section-one a {
         text-decoration: none;
         color: black;
@@ -532,57 +592,60 @@ footer a {
     .section-one h4 {
         margin: 0px 10px
     }
+
     .section-one h3 {
         margin: 20px 20px;
     }
 
-    /* Activités à Marseille*/
+    /******************** Changes for section two *****************/
     .section-two-cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 224px 32px 32px 32px 224px 50px;
     }
+
     .section-two img {
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
-    .section-two .content-card {
-        background-color: white;
+
+    .section-two-cards .card1,
+    .section-two-cards .card2,
+    .section-two-cards .card3,
+    .section-two-cards .card4,
+    .section-two-cards .card5,
+    .section-two-cards .card6 {
         height: auto;
         width: 100%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
-    .section-two h4 {
-        margin: 0;
-    }
-    .section-two-cards .card1 {
+
+    .card1 {
         grid-column: 1/2;
         grid-row: 2/7;
     }
-    .section-two .card2 {
+
+    .section-two-cards a .card2 {
         grid-column: 2/3;
         grid-row: 2/5;
     }
-    .section-two .card3 {
+
+    .section-two-cards .card3 {
         grid-column: 3/4;
         grid-row: 2/7;
     }
-    .section-two .card4 {
+
+    .section-two.cards .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
-    .section-two .card5 {
+
+    .section-two.cards .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
-    .section-two .card6 {
+
+    .section-two.cards .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
-    }
-    .section-two-cards img{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        object-fit: cover;
-        height: auto;
     }
 }
