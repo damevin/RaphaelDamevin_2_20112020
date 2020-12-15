@@ -1,22 +1,9 @@
-/* Body page configuration */
+/* Body page configuration*/
 body {
     box-sizing: border-box;
     font-family: Raleway, serif;
     max-width: 1440px;
-
 }
-
-/* Animations configuration for articles */
-article {
-    cursor: pointer;
-    transform-origin: 50% 50%;
-    transition: transform 0.1s linear;
-}
-
-article:hover {
-    transform: scale(1.02) rotate(0.1deg);
-}
-
 /*Imgs configuration*/
 img {
     width: 100%;
@@ -31,25 +18,24 @@ img {
     justify-content: space-between;
     padding: 30px;
 }
+.header a {
+    text-decoration: none;
+    color: #0065FC;
+}
 /* Logo Size configuration */
 .header img {
     width: 80px;
 }
 /* Navigation links for desktop version */
 .header-navigation-links {
-    color: grey;
     display: none;
-    text-decoration: none;
 }
-.header-navigation-links:hover {
-    color: #0065FC;
-}
-/* Navigation links for mobile version */
 
+/* Navigation links for mobile version */
 .header-navigation-links-mobile {
     display: flex;
     justify-content: space-around;
-    padding: 10px 48px;
+    padding: 9px 36px;
     text-decoration: none;
 }
 .header-navigation-links-mobile [data-active=true] {
@@ -58,12 +44,12 @@ img {
     text-decoration: none;
 }
 .header-navigation-links-mobile [data-active=false] {
-    color: grey;
     border-bottom: 2px solid grey;
+    color: grey;
 }
 .header-signup {
     color: #0065FC;
-    display: inline;
+    display: initial;
     text-decoration: none;
 }
 .header-signup:hover {
@@ -94,8 +80,7 @@ img {
 }
 
 .searchbar input {
-    border: none;
-    font-weight: bold;
+    border:none;
     padding-left: 10px;
     width: 100%;
 }
@@ -126,10 +111,13 @@ img {
 
 /* Filters configuration */
 
-.filters {
-    margin: 10px;
+.filters h3 {
+    margin: 10px
 }
-
+.filters a {
+    color: black;
+    text-decoration: none;
+}
 .filters-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +139,9 @@ img {
     margin: -2px;
     padding: 12px;
 }
+
 .btn {
+    padding: 0;
     align-items: center;
     border-radius: 50px;
     border: 2px solid #ccc;
@@ -177,31 +167,36 @@ img {
     margin: 10px;
 }
 
-/* Section most popular */
-
-.most-popular {
-    background-color: #F2F2F2;
-    padding: 5px;
-    width: auto;
-}
-
+/* Title for most popular section */
 .title-popular-section {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 18px;
 }
+/* Configuration for all the div "most popular" */
 
-/* Cards most popular */
-
+.most-popular {
+    background-color: #F2F2F2;
+    padding: 5px;
+    width: auto;
+}
 .most-popular .card {
     background-color: white;
     border-radius: 25px;
+    color: black;
     display: flex;
-    filter: drop-shadow(0 0 4px #ccc);
     height: 120px;
     margin: 15px;
+    text-decoration: none;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
     width:auto;
+}
+.most-popular a:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.02) rotate(0.1deg);
 }
 
 .most-popular .imgCard {
@@ -213,20 +208,22 @@ img {
     object-fit: cover;
     width: 128px;
 }
-
-.most-popular .contentCard h4 {
-    margin-left: 8px;
-    margin-bottom: 5px;
-}
-.most-popular h3 {
-    margin: 35px 5px 43px
-
+.most-popular .card .content-card {
+    padding-top: 15px
 }
 
-.most-popular .contentCard span {
-    font-size: 14px;
-    margin-left: 8px;
+.most-popular .content-card h4 {
+    font-size: 16px;
+    margin: 0px 10px;
 }
+
+.most-popular .content-card span {
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
+}
+
+
 .most-popular .ratting-stars {
     margin-left: 10px;
 }
@@ -235,32 +232,43 @@ img {
     font-size: 13px;
     margin-top: 8px;
 }
-.fa-star unchecked {
-    color: grey;
-}
 
-
-/*Cards section one */
-
-.section-one {
-    margin: auto;
-}
-.section-one h3,
-.section-one h5 {
-    font-weight: bold;
+/*
+    SECTION ONE
+    CONFIGURATION
+    FOR MOBILE
+*/
+.section-one h3 {
     margin: 35px 20px;
     }
-
-
+.section-one a {
+    text-decoration: none;
+}
+/* Style of cards*/
 .section-one .card {
+    text-decoration: none;
+    color: black;
     background-color: white;
     border-radius: 20px;
-    filter: drop-shadow(0 0 4px #ccc);
     height: 180px;
+    width: auto;
     margin: 15px;
+    filter: drop-shadow(0 0 4px #ccc)
 }
-
-.section-one .card-img img {
+.section-one .content-card {
+    height: 70px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.section-one .content-card h4 {
+    margin: 0px
+}
+.section-one .content-card span {
+    font-size: 12px;
+}
+.section-one img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 100px;
@@ -268,69 +276,55 @@ img {
     padding: 5px;
     width: 97%;
 }
-
-.section-one h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 3px;
-    margin: 10px;
-}
-
-.section-one span {
-    font-size: 13px;
-    margin: 10px;
-    text-align: left;
-}
-
 .section-one .ratting-stars {
     color: #0065FC;
     font-size: 9px;
-    margin-left: 10px;
     margin-top: 5px;
 }
 
-/* \/ Configure ratting stars here \/ */
-
-
 /* Cards Section Two */
-
 .section-two {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 180px 180px 180px 180px 180px 30px;
-    margin: 0px;
-    row-gap: 30px;
 }
-.section-two h4 {
-    margin: 0;
+.section-two-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: auto;
+    filter: drop-shadow(0 0 4px #ccc);
+    margin: auto
 }
-
-.section-two-title {
-    margin: 15px;
-}
-
 .section-two .card1,
 .section-two .card2,
 .section-two .card3,
 .section-two .card4,
 .section-two .card5,
 .section-two .card6 {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    height: 180px;
+    width: auto;
     margin: 15px;
-    filter: drop-shadow(0 0 4px #ccc);
+    filter: drop-shadow(0 0 4px #ccc)
 }
-
-.section-two .card-img img{
+.section-two a {
+    text-decoration: none;
+    color: black;
+}
+.section-two img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 100%;
     object-fit: cover;
+    height: 120px;
 }
 
 .section-two .content-card {
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 15px;
+    margin-left: 15px
 }
 /*Section footer*/
 
@@ -363,8 +357,7 @@ footer a {
     .header img {
         width: 90px;
     }
-    .header-navigation-links,
-    .header-signup {
+    .header-navigation-links {
         display: inline;
         padding: 25px 10px 0px;
     }
@@ -372,7 +365,8 @@ footer a {
         color: #0065FC;
         border-top: 2px solid #0065FC;
     }
-    .header-navigation-links-mobile {
+    .header-navigation-links-mobile,
+    .header-signup-mobile {
         display:none
     }
     /* Changes for filters */
@@ -401,14 +395,14 @@ footer a {
         font-size: 12px;
         margin-right: 8px;
     }
-    .most-popular .contentCard span {
+    .most-popular .content-card span {
         font-size: 11px
     }
     /* changes for sectionOne */
     .section-one {
         margin: 0;
     }
-    .section-one nav {
+    .section-one-cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -417,12 +411,13 @@ footer a {
         width: 350px;
     }
     /*changes for section-two */
-    .section-two {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px 150px 150px 50px;
-        row-gap: 40px;
-
+    .section-two-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+    .section-two h3 {
+        margin: 35px 20px;
     }
     .section-two .card1,
     .section-two .card2,
@@ -430,9 +425,14 @@ footer a {
     .section-two .card4,
     .section-two .card5,
     .section-two .card6 {
-        height: auto;
-        width: auto;
+        text-decoration: none;
+        color: black;
         background-color: white;
+        border-radius: 20px;
+        height: 180px;
+        width: 350px;
+        margin: 15px;
+        filter: drop-shadow(0 0 4px #ccc)
     }
     footer {
         display: flex;
@@ -450,7 +450,6 @@ footer a {
         padding: 4px
     }
 }
-
 @media screen and (min-width: 992px) {
     body {
         max-width: 1240px;
@@ -463,19 +462,30 @@ footer a {
     .header-signup {
         padding: 30px;
     }
+    .header-signup-mobile {
+        display: none;
+    }
     .fa-search {
         display: none;
     }
     .searchbar-text {
+        background-color: #0065FC;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px ;
+        color: white;
         display: inline;
+        padding: 15px;
+        text-decoration: none;
     }
-        /* Section hébergements (populaire et hébergements inclus)*/
     .hosting {
         display: flex;
-        justify-content: space-between;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
     /* Les plus populaires */
+    .title-popular-section {
+        padding: 15px;
+    }
     .most-popular {
         min-width: 22%;
         display: flex;
@@ -485,7 +495,7 @@ footer a {
         background-color: white;
         border-radius: 25px;
         display: flex;
-        filter: drop-shadow(0 0 4px grey);
+        filter: drop-shadow(0 0 4px #ccc);
         height: 120px;
         margin: 5px;
     }
@@ -502,7 +512,7 @@ footer a {
         background: #F2F2F2;
         border-radius: 15px;
         margin-right: 20px;
-        padding: 2px
+        padding: 15px
     }
     .section-one-cards {
         align-items: center;
@@ -514,43 +524,65 @@ footer a {
         margin: 20px 10px;
         width: 270px;
     }
-    .section-one h5:hover {
-        cursor: pointer;
-        text-decoration: underline;
+    .section-one a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .section-one h4 {
+        margin: 0px 10px
+    }
+    .section-one h3 {
+        margin: 20px 20px;
     }
 
     /* Activités à Marseille*/
-
-    .section-two {
+    .section-two-cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
-        margin-bottom: 50px;
-        row-gap: 10px;
+        grid-template-rows: auto 224px 32px 32px 32px 224px 50px;
     }
-
-    .card1 {
+    .section-two img {
+        height: 100%;
+    }
+    .section-two .content-card {
+        background-color: white;
+        height: auto;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .section-two h4 {
+        margin: 0;
+    }
+    .section-two-cards .card1 {
         grid-column: 1/2;
         grid-row: 2/7;
     }
-    .card2 {
+    .section-two .card2 {
         grid-column: 2/3;
         grid-row: 2/5;
     }
-    .card3 {
+    .section-two .card3 {
         grid-column: 3/4;
         grid-row: 2/7;
     }
-    .card4 {
+    .section-two .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
-    .card5 {
+    .section-two .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
-    .card6 {
+    .section-two .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
+    }
+    .section-two-cards img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        height: auto;
     }
 }
