@@ -23,6 +23,10 @@ Reservia est un site de plannification de vacances. Leur site permet aux usagers
 - Thomas DIMNET : revue de code
 
 ## Changelog
+*V1.1 (dec20)* :
+- Publication du site
+- Correctifs 
+
 *v.1.0.1 (nov20)* : 
 - Corrections du code
 - Ajout de la section "Most Popular" & "Activities"
@@ -37,3 +41,6 @@ Reservia est un site de plannification de vacances. Leur site permet aux usagers
 
 ## License 
 MIT
+
+### Validation W3C :
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fdamevin.github.io%2Freservia%2F
