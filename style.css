@@ -313,10 +313,10 @@ img {
 }
 
 .section-one .see-more {
-    margin: 15px;
-    text-decoration: none;
     color: black;
     font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
 }
 
 /***** Section two ****/
@@ -331,7 +331,8 @@ img {
 }
 
 .section-two h4 {
-    margin: 5px
+    margin: 5px;
+    margin-left: 15px;
 }
 
 .section-two .content-card {
@@ -346,9 +347,9 @@ img {
 .section-two img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: 140px;
     object-fit: cover;
     overflow: hidden;
-    height: 140px;
 }
 
 .section-two .card1,
@@ -357,10 +358,10 @@ img {
 .section-two .card4,
 .section-two .card5,
 .section-two .card6 {
-    height: 100%;
     background-color: white;
     border-radius: 15px;
     filter: drop-shadow(0 0 4px #ccc);
+    height: 100%;
     margin: 15px;
 }
 
@@ -407,6 +408,9 @@ footer a {
     .header-navigation-links {
         display: inline;
         padding: 25px 10px 0px;
+    }
+    .header-navigation-links:hover {
+        color: #0065fc;
     }
 
     .header-navigation-links[data-active=true] {
