@@ -23,7 +23,7 @@ img {
 
 .header a {
     text-decoration: none;
-    color: #0065FC;
+    color: grey;
 }
 
 /* Logo Size configuration for mobile version*/
@@ -50,13 +50,13 @@ img {
     text-decoration: none;
 }
 
-.header-navigation-links-mobile [data-active=false] {
+.header-navigation-links-mobile[data-active=false] {
     border-bottom: 2px solid grey;
     color: grey;
 }
 
 .header-signup {
-    color: #0065FC;
+    color: #0065FC !important;
     display: initial;
     text-decoration: none;
 }
@@ -341,7 +341,7 @@ img {
 .section-two img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-height: 120px;
+    height: 120px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -504,12 +504,10 @@ footer a {
     .header img {
         width: 100px
     }
-
     .header-navigation-links,
     .header-signup {
-        padding: 30px;
+        padding: 26px;
     }
-
     .header-signup-mobile {
         display: none;
     }
@@ -602,6 +600,7 @@ footer a {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 224px 32px 32px 32px 224px 50px;
+        row-gap: 30px;
     }
 
     .section-two img {
@@ -609,42 +608,42 @@ footer a {
         height: auto;
     }
 
-    .section-two-cards .card1,
-    .section-two-cards .card2,
-    .section-two-cards .card3,
-    .section-two-cards .card4,
-    .section-two-cards .card5,
-    .section-two-cards .card6 {
-        height: auto;
+    a .card1,
+    a .card2,
+    a .card3,
+    a .card4,
+    a .card5,
+    a .card6 {
         width: 100%;
+        height: auto;
     }
 
-    .card1 {
+    .card1  {
         grid-column: 1/2;
         grid-row: 2/7;
     }
 
-    .section-two-cards a .card2 {
+    .card2 {
         grid-column: 2/3;
         grid-row: 2/5;
     }
 
-    .section-two-cards .card3 {
+    .card3 {
         grid-column: 3/4;
         grid-row: 2/7;
     }
 
-    .section-two.cards .card4 {
+    .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
 
-    .section-two.cards .card5 {
+    .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
 
-    .section-two.cards .card6 {
+    .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
     }
