@@ -325,6 +325,9 @@ img {
 }
 
 /***** Section two ****/
+.section-two {
+    margin-bottom: 30px;
+}
 
 .section-two a {
     color: black;
@@ -346,7 +349,7 @@ img {
 
 .section-two-cards {
     display: grid;
-    grid-template-rows: 180px 180px 180px 180px 180px 180px;
+    grid-template-rows: repeat(6, 180px);
     row-gap: 15px;
 }
 
@@ -483,6 +486,9 @@ footer a {
     }
 
     /*changes for section-two */
+    .section-two {
+        margin-bottom: 0px;
+    }
     .section-two-cards {
         display: grid;
         grid-template-columns: 50% 50%;
