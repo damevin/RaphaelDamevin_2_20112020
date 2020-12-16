@@ -250,8 +250,7 @@ img {
 }
 
 .most-popular .fa-star {
-    color: #0065FC;
-    font-size: 13px;
+    font-size: 10px;
     margin-top: 8px;
 }
 
@@ -306,9 +305,14 @@ img {
     padding: 5px;
     width: 97%;
 }
+.fa-star {
+    color: #0065FC;
+}
+.ratting-stars .unratted-star {
+    color: grey;
+}
 
 .section-one .ratting-stars {
-    color: #0065FC;
     font-size: 9px;
     margin-top: 5px;
 }
