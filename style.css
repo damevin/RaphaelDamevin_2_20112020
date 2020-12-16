@@ -57,8 +57,6 @@ img {
 
 .header-signup {
     color: #0065FC !important;
-    display: initial;
-    text-decoration: none;
 }
 
 .header-signup:hover {
@@ -172,8 +170,11 @@ img {
 
 .btn:hover {
     background-color: #0065FC;
-    color: white
+    color: white;
+    border: 2px solid #DEEBFF;
 }
+
+/* Text after filters */
 
 .description-filters {
     margin: 25px 5px;
