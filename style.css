@@ -56,7 +56,7 @@ img {
 }
 
 .header-signup {
-    color: #0065FC !important;
+    display: none;
 }
 
 .header-signup:hover {
@@ -421,6 +421,7 @@ footer a {
     }
 
     .header-navigation-links:hover {
+        border-top: 2px solid #0065fc;
         color: #0065fc;
     }
 
@@ -432,6 +433,12 @@ footer a {
     .header-navigation-links-mobile,
     .header-signup-mobile {
         display: none
+    }
+    .header-signup {
+        display: initial;
+    }
+    .header-signup:hover {
+        color: #0065FC;
     }
 
     /* Changes for filters */
