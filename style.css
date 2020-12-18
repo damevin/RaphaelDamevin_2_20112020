@@ -1,19 +1,8 @@
-/* Body page configuration */
+/* Body page configuration*/
 body {
-    font-family: Raleway, serif;
     box-sizing: border-box;
+    font-family: Raleway, serif;
     max-width: 1440px;
-}
-
-/* Animations configuration for articles */
-article {
-    transform-origin: 50% 50%;
-    transition: transform 0.1s linear;
-    cursor: pointer;
-}
-
-article:hover {
-    transform: scale(1.02) rotate(0.1deg);
 }
 
 /*Imgs configuration*/
@@ -23,545 +12,705 @@ img {
 
 /* Header configuration */
 .header {
-    padding: 30px;
+    align-items: center;
+    color: #F2F2F2;
     display: flex;
-    justify-content: space-between;
-    color: #0065FC;
     font-size: 14px;
     font-weight: bold;
+    justify-content: space-between;
+    padding: 30px;
 }
 
+.header a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* Logo Size configuration for mobile version*/
 .header img {
-    width: 25%;
+    width: 80px;
 }
 
 /* Navigation links for desktop version */
-.headerNavLink {
+.header-navigation-links {
     display: none;
 }
-/* Navigation links for mobileversion */
-.headerNavLinksMobile {
+
+/* Navigation links for mobile version */
+.header-navigation-links-mobile {
     display: flex;
     justify-content: space-around;
+    padding: 9px 36px;
+    text-decoration: none;
 }
 
-.headerNavLinkMobile {
-    display: flex;
-    border-bottom: 2px grey solid ;
-    padding: 0px 40px 20px 35px;
-    cursor: pointer;
-}
-.headerNavLinksMobile [data-active=true] {
+.header-navigation-links-mobile [data-active=true] {
+    border-bottom: 2px solid #0065FC;
     color: #0065FC;
-    border-color: #0065FC;
+    text-decoration: none;
 }
 
-.headerCategories h2 {
-    font-size: 18px;
+.header-navigation-links-mobile[data-active=false] {
+    border-bottom: 2px solid grey;
+    color: grey;
+}
+
+.header-signup {
+    color: #0065FC !important;
+}
+
+.header-signup:hover {
+    text-decoration: underline;
 }
 
 /* Title & Subtitle */
 
 .title h1 {
-    margin: 15px;
     font-size: 20px;
+    margin: 10px;
 }
 
 .title h3 {
     font-size: 15px;
-    margin: 15px;
+    margin: 10px;
 }
-/* Search bar configuration */
 
-.searchBar {
-    max-width: 400px;
-    margin: 15px;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    border: 2px solid whitesmoke;
+/* Search Bar configuration */
+
+.searchbar {
     border-radius: 20px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin: 30px 5px;
+    max-width: 400px;
+    min-width: 305px;
 }
 
-.searchBar input {
-    font-weight: bold;
-    color: black;
+.searchbar input {
     border: none;
-    width: auto;
+    padding-left: 10px;
+    width: 100%;
 }
 
 .fa-map-marker-alt {
     background-color: whitesmoke;
-    color: black;
-    border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 20%;
-    max-width: 50px;
-    text-align: center;
+    border-top-left-radius: 15px;
+    color: black;
+    font-size: 20px;
     padding: 15px;
+}
+
+.searchbar-text {
+    display: none;
 }
 
 .fa-search {
     background-color: #0065FC;
-    color: white;
     border-radius: 15px;
-    width: 20%;
-    text-align: center;
-    padding: 15px;
+    color: white;
     cursor: pointer;
+    padding: 15px;
+    text-align: center;
 }
+
 .fa-search:hover {
     background-color: #DEEBFF;
 }
 
-/* Filters configuration */
+/* Filters */
 
-.filters {
-    margin: 10px;
+.filters h3 {
+    margin: 10px
 }
 
-.filtersBtns {
+.filters a {
+    color: black;
+    text-decoration: none;
+}
+
+.filters-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 9px
 }
-.filtersBtns:hover span{
+
+.btn span {
+    margin-left: 10px;
+    margin: 10px
+}
+
+.btn:hover span {
     text-decoration: #0065FC;
 }
 
-.filtersBtns span {
-    text-align: center;
-    margin: 15px;
+.btn i {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    border: 1px solid #DEEBFF;
+    color: #0065FC;
+    font-size: 20px;
+    margin: -2px;
+    padding: 12px;
 }
 
-.filtersBtns i {
-    text-align: center;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 100px;
-    padding: 20px;
-}
 .btn {
-    border: 2px solid grey;
-    border-radius: 150px;
-    min-width: 125px;
-    width: auto;
-    display: flex;
+    padding: 0;
     align-items: center;
-    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #ccc;
     cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    height: 40px;
+    margin-bottom: 9px;
+    margin-left: 9px;
 }
 
 .btn:hover {
     background-color: #0065FC;
-    color: white
+    color: white;
+    border: 2px solid #DEEBFF;
 }
 
-.descriptionFilters {
-    margin: 25px 5px
+/* Text after filters */
+
+.description-filters {
+    margin: 25px 5px;
 }
 
-.descriptionFilters i {
+.description-filters i {
     color: #0065FC;
     margin: 10px;
 }
 
-/* Section most popular */
+/* Title for most popular section */
+.title-popular-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px;
+}
 
-.mostPopular {
+/* Most Popular aside*/
+.most-popular {
     background-color: #F2F2F2;
     padding: 5px;
     width: auto;
 }
 
-.titlePopular {
-    margin: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Cards most popular */
-
-.mostPopular .card {
-    border-radius: 25px;
+.most-popular .card {
     background-color: white;
-    filter: drop-shadow(0 0 4px grey);
+    border-radius: 25px;
+    color: black;
     display: flex;
+    height: 120px;
     margin: 15px;
-    width:auto
+    text-decoration: none;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
+    width: auto;
 }
 
-.mostPopular .imgCard {
-    width: 130px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
+.most-popular a:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.02) rotate(0.1deg);
+}
+
+.most-popular .imgCard {
     align-items: center;
-    height: 150px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid white;
+    height: 113px;
+    object-fit: cover;
+    width: 128px;
 }
 
-.mostPopular .contentCard h4 {
-    margin-left: 8px;
-    margin-bottom: 5px;
+.most-popular .card .content-card {
+    padding-top: 15px
 }
 
-.mostPopular .contentCard span {
-    margin-left: 8px;
-    font-size: 14px
+.most-popular .content-card h4 {
+    font-size: 16px;
+    margin: 0px 10px;
 }
 
-.mostPopular .fa-star {
-    font-size: 13px;
+.most-popular .content-card span {
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+.most-popular .ratting-stars {
+    margin-left: 10px;
+}
+
+.most-popular .fa-star {
+    font-size: 10px;
     margin-top: 8px;
 }
 
-
-/*Cards section one */
-
-.sectionOne {
-    margin-top: 50px;
-}
-.sectionOne h3,
-.sectionOne h5 {
-    font-weight: bold;
+/* section one */
+.section-one h3 {
     margin: 35px 20px;
-    }
+}
 
+.section-one a {
+    text-decoration: none;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
+}
 
-.sectionOne .card {
+.section-one a:hover {
+    transform: scale(1.02) rotate(0.1deg);
+}
+
+/* style of cards*/
+.section-one .card {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
     height: 180px;
-    border-radius: 20px;
-    background-color: white;
-    filter: drop-shadow(0 0 4px grey);
+    width: auto;
     margin: 15px;
+    filter: drop-shadow(0 0 4px #ccc)
 }
 
-.sectionOne .card-img img {
-    object-fit: cover;
-    width: 100%;
+.section-one .content-card {
+    height: 70px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.section-one .content-card h4 {
+    margin: 0px
+}
+
+.section-one .content-card span {
+    font-size: 12px;
+}
+
+.section-one img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 100px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.sectionOne h4 {
-    margin: 10px;
-    margin-bottom: 3px;
-    font-weight: bold;
-    font-size: 18px
-}
-
-.sectionOne span {
-    text-align: left;
-    margin: 10px;
-    font-size: 15px
-}
-
-.sectionOne .rattingStars {
-    color: #0065FC;
-    margin-top: 5px;
-    margin-left: 10px
-}
-
-/* \/ Configure ratting stars here \/ */
-
-.rattingStars {
-    color: #0065FC;
-    margin-top: 20px;
-    margin-left: 8px;
-}
-
-/* Cards Section Two */
-
-.sectionTwo {
-    margin-top: 50px;
-}
-
-.sectionTwo h3 {
-    font-weight: bold;
-    margin: 35px 20px;
-}
-
-.sectionTwo h4 {
-    font-weight: bold;
-    margin: 20px 20px
-}
-
-.sectionTwo .card1,
-.sectionTwo .card2,
-.sectionTwo .card3,
-.sectionTwo .card4,
-.sectionTwo .card5,
-.sectionTwo .card6 {
-    margin: 15px;
-    border-radius: 20px;
-    background-color: white;
-    filter: drop-shadow(0 0 4px grey);
-}
-
-.sectionTwo .card-img img {
     object-fit: cover;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 5px;
+    width: 97%;
+}
+.fa-star {
+    color: #0065FC;
+}
+.ratting-stars .unratted-star {
+    color: grey;
 }
 
-/*Section footer*/
+.section-one .ratting-stars {
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.section-one .see-more {
+    color: black;
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+/***** Section two ****/
+.section-two {
+    margin-bottom: 30px;
+}
+
+.section-two a {
+    color: black;
+    text-decoration: none;
+}
+
+.section-two h3 {
+    margin: 15px
+}
+
+.section-two h4 {
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.section-two .content-card {
+    padding: 5px;
+}
+
+.section-two-cards {
+    display: grid;
+    grid-template-rows: repeat(6, 180px);
+    row-gap: 15px;
+}
+
+.section-two img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 140px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.section-two .card1,
+.section-two .card2,
+.section-two .card3,
+.section-two .card4,
+.section-two .card5,
+.section-two .card6 {
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 4px #ccc);
+    height: 100%;
+    margin: 15px;
+}
+
+/************* Footer ****************/
 
 footer {
     background-color: #F2F2F2;
     padding: 20px;
-    list-style:none;
 }
 
-
 footer ul {
-    font-weight: bolder;
-    margin:10px 0px;
-    padding:0;
+    list-style: none;
+}
+
+footer h2 {
+    font-size: 18px
 }
 
 footer li {
-    padding: 4px
-}
-footer a {
-    text-decoration: none;
-    color: black
+    padding: 4px;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/**** mediaquerie for screen < 768px ******/
+
 @media screen and (min-width: 768px) {
-    /*  Changes for header section  */
+
     .body {
         margin: auto
     }
+
+    /*  Changes for header section  */
     .header {
         padding: 14px
     }
-    .headerNav{
-        margin-top: 18px;
-    }
+
     .header img {
-        width: 15%;
+        width: 90px;
     }
-    .headerNavLink,
-    .headerSignp {
+
+    .header-navigation-links {
         display: inline;
-        padding: 30px;
-        cursor: pointer;
+        padding: 25px 10px 0px;
     }
-    .headerNavLink[data-active=true]{
+
+    .header-navigation-links:hover {
+        color: #0065fc;
+    }
+
+    .header-navigation-links[data-active=true] {
         color: #0065FC;
         border-top: 2px solid #0065FC;
     }
-    .headerNavLinksMobile {
-        display:none
+
+    .header-navigation-links-mobile,
+    .header-signup-mobile {
+        display: none
     }
+
     /* Changes for filters */
-    .filtersBtns {
+    .filters-buttons {
         display: flex;
         flex-wrap: nowrap;
         height: 60px
     }
-    .btn {
-        width: 200px
+
+    /* Changes for most-popular */
+    .title-popular-section {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 18px;
     }
 
-    /* Changes for mostPopular */
-    .titlePopular {
-        margin: 0px 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .mostPopular {
+    .most-popular {
         border-radius: 15px;
     }
-    .mostPopular .card {
+
+    .most-popular .card {
         width: auto;
     }
-    .mostPopular nav {
-        display: flex;
-        justify-content: space-around;
 
-        flex-wrap: nowrap;
-
-    }
-    .mostPopular .fa-star {
-        font-size: 10px;
-        margin-top: 2px;
-    }
-    .mostPopular .imgCard {
-        width: 80px;
+    .most-popular .imgCard {
         height: 110px;
     }
-    .mostPopular h4 {
+
+    .most-popular h4 {
         font-size: 12px;
         margin-right: 8px;
     }
 
-    .mostPopular .contentCard span {
+    .most-popular .content-card span {
         font-size: 11px
     }
 
-    /* changes for sectionOne */
-    .sectionOne {
+    /* changes for section one */
+    .section-one {
         margin: 0;
     }
-    .sectionOne nav {
+
+    .section-one-cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .sectionOne .card {
+
+    .section-one .card {
         width: 350px;
     }
 
-    /*changes for sectionTwo */
-
-    .sectionTwoCards {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    /*changes for section-two */
+    .section-two {
+        margin-bottom: 0px;
+    }
+    .section-two-cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 180px 180px 180px 50px;
     }
 
-    .sectionTwo .card1,
-    .sectionTwo .card2,
-    .sectionTwo .card3,
-    .sectionTwo .card4,
-    .sectionTwo .card5,
-    .sectionTwo .card6 {
-        width: auto;
-
+    .section-two-cards a {
+        height: 100%;
     }
+
+    /* changes for footer section*/
     footer {
-        text-align: left ;
-        padding: 20px;
         display: flex;
         justify-content: space-around;
-        list-style:none;
+        list-style: none;
+        padding: 20px;
+        text-align: left;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
     ul {
-        font-weight: bolder;
-        margin:10px 0px;
-        padding:0;
+        margin: 10px 0px;
+        padding: 0;
+        list-style-type: none
     }
+
     li {
+        text-decoration: none;
         padding: 4px
     }
-
 }
 
-@media screen and (min-width: 1439px) {
+/**** mediaquerie for screen < 992px ******/
+
+@media screen and (min-width: 992px) {
     body {
+        max-width: 1240px;
         margin: auto
     }
-    .headerNav{
-        margin-top: 18px;
-    }
+
+    /*** changes for header section ***/
     .header img {
-        width: 10%
+        width: 100px
     }
-    /* Section hébergements (populaire et hébergements inclus)*/
+
+    .header-navigation-links,
+    .header-signup {
+        padding: 26px;
+    }
+
+    .header-signup-mobile {
+        display: none;
+    }
+
+    /***** Changes for searchbar *********/
+    .fa-search {
+        display: none;
+    }
+
+    .searchbar-text {
+        background-color: #0065FC;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        color: white;
+        display: inline;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    /*** Changes for section 1 and most popular (hosting section) ******/
     .hosting {
         display: flex;
-        justify-content: space-between;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
-    /* Les plus populaires */
-    .mostPopular {
+
+    /*********** Changes for most popular section *********/
+    .title-popular-section {
+        padding: 15px;
+    }
+
+    .most-popular {
         min-width: 22%;
         display: flex;
         flex-direction: column;
     }
-    .mostPopular .card {
-        display: flex;
-        border-radius: 25px;
+
+    .most-popular .card {
         background-color: white;
-        filter: drop-shadow(0 0 4px grey);
-        margin: 15px;
+        border-radius: 25px;
+        display: flex;
+        filter: drop-shadow(0 0 4px #ccc);
         height: 120px;
+        margin: 5px;
     }
-    .mostPopular .imgCard {
-        height: 113px;
-        width: 130px;
-        margin: 2px;
+
+    .most-popular .imgCard {
+        height: 112px;
+        width: 100px;
     }
-    .mostPopular h4 {
-        margin:10px;
-        font-size: 15px
+
+    .most-popular h4 {
+        font-size: 14px;
+        margin: 10px;
     }
-    /* Hébergements à Marseille*/
-    .sectionOne {
-        margin-right: 20px;
+
+    /********************** Changes for section one ***********************/
+    .section-one {
         background: #F2F2F2;
         border-radius: 15px;
-        padding: 20px
+        margin-right: 20px;
+        padding: 15px
     }
-    .sectionOneCards {
+
+    .section-one-cards {
+        align-items: center;
         display: flex;
         flex-flow: wrap;
-        align-items: center;
         justify-content: space-around;
-        flex-grow: 1;
     }
-    .sectionOneCards .card {
-        height: auto;
-        padding: 2px;
+
+    .section-one-cards .card {
         margin: 20px 10px;
-        width: 320px;
-    }
-    .sectionOne h3,
-    .sectionOne h5 {
-        margin: 15px 18px;
-    }
-    .sectionOne h5:hover {
-        text-decoration: underline;
-        cursor: pointer
+        width: 270px;
     }
 
-    /* Activités à Marseille*/
-    .sectionTwo {
-        margin-bottom: 50px;
+    .section-one a {
+        text-decoration: none;
+        color: black;
     }
 
-    .sectionTwoCards {
+    .section-one h4 {
+        margin: 0px 10px
+    }
+
+    .section-one h3 {
+        margin: 20px 20px;
+    }
+
+    /******************** Changes for section two *****************/
+    .section-two-cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+        grid-template-rows: auto 224px 32px 32px 32px 224px 50px;
+        row-gap: 0px;
+        column-gap: 10px;
     }
 
-    .card1 {
+    .section-two h4 {
+        font-size: 17px;
+        padding: 10px
+    }
+
+    .section-two img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-two a {
+        transform-origin: 50% 50%;
+        transition: transform 0.1s linear;
+    }
+
+    .section-two a:hover {
+        transform: scale(1.02) rotate(0.1deg);
+    }
+
+    .section-two-cards .card1 {
         grid-row: 2/7;
         grid-column: 1/2;
     }
-    .card2 {
+
+    .section-two-cards .card1 .card-img {
+        height: 90%
+    }
+
+    .section-two-cards .card2 {
         grid-column: 2/3;
         grid-row: 2/5;
     }
-    .card3 {
+
+    .section-two-cards .card2 .card-img {
+        height: 80%
+    }
+
+    .section-two-cards .card3 {
         grid-column: 3/4;
         grid-row: 2/7;
-
     }
-    .card4 {
+
+    .section-two-cards .card3 .card-img {
+        height: 90%;
+    }
+
+    .section-two-cards .card4 {
         grid-column: 4/5;
         grid-row: 2/3;
-
     }
-    .card5 {
+
+    .section-two-cards .card4 .card-img {
+        height: 70%;
+    }
+
+    .section-two-cards .card5 {
         grid-column: 2/3;
         grid-row: 6/7;
-
     }
-    .card6 {
+
+    .section-two-cards .card5 .card-img {
+        height: 73%
+    }
+
+    .section-two-cards .card6 {
         grid-column: 4/5;
         grid-row: 4/7;
     }
 
-
-    .footer {
-        width: 100%;
+    .section-two-cards .card6 .card-img {
+        height: 80%;
     }
+
 }

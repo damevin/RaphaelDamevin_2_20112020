@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4432ea82-55c9-4b0a-81a6-e43a5942b29d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+>>>>>>> 3338bccfc1c847c8f2934f4c5a9c9ab4d74549a6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1lSKhL0GmQow80weYq9H7SLr5Ts" />
   <component name="ProjectViewState">
@@ -22,6 +29,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -31,7 +43,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,7 +59,20 @@
       <workItem from="1607669048772" duration="2076000" />
       <workItem from="1607671135880" duration="4404000" />
       <workItem from="1607678940029" duration="2485000" />
+<<<<<<< HEAD
       <workItem from="1608297643984" duration="687000" />
+=======
+      <workItem from="1607715033791" duration="1022000" />
+      <workItem from="1607716098141" duration="4598000" />
+      <workItem from="1607791593163" duration="11664000" />
+      <workItem from="1607926365424" duration="4256000" />
+      <workItem from="1607957508899" duration="5568000" />
+      <workItem from="1608016727052" duration="22147000" />
+      <workItem from="1608058897903" duration="6219000" />
+      <workItem from="1608098034561" duration="3220000" />
+      <workItem from="1608128126412" duration="680000" />
+      <workItem from="1608143183084" duration="129000" />
+>>>>>>> 3338bccfc1c847c8f2934f4c5a9c9ab4d74549a6
     </task>
     <servers />
   </component>
