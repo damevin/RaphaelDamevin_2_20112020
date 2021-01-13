@@ -1,22 +1,23 @@
-# Reservia
+# Ohmyfood!
 
+Ohmyfood! est une jeune startup Parisienne qui voudrait s'imposer sur le marché avec une application web mobile qui répertorie les menus des restaurants gastronomiques. 
 
-Reservia est un site de plannification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
+Les utilisateurs pourront composer et réserver leur menu afin que leurs plats soient prêts dès leur arrivée au restaurant.
 
 **Ce projet est crée dans le cadre de mon alternance "Développeur Front-End" chez OpenClassRooms.**
 
 ## Installation du projet
 
-- Installation du repository ``git clone https://github.com/damevin/reservia.git``
-- Ouvrir ``main.html``
+- Installation du repository ``git clone https://github.com/damevin/____``
+- Ouvrir ``index.html``
 
 ## Live demo 
 
-- https://damevin.github.io/RaphaelDamevin_2_20112020/
+- https://damevin.github.io/___
 
 ## Languages utilisés 
 
-- HTML5, CSS3
+- HTML5, SCSS
 
 ### Auteurs & Contributeurs
 - Raphaël DAMEVIN : intégration web
@@ -24,19 +25,19 @@ Reservia est un site de plannification de vacances. Leur site permet aux usagers
 
 ## Changelog
 *V1.1 (dec20)* :
-- Publication du site
-- Correctifs 
+- Publication de l'application web
+- Correctifs au validateur W3C
 
-*v.1.0.1 (nov20)* : 
+*v.1.0.1 (janv20)* : 
 - Corrections du code
-- Ajout de la section "Most Popular" & "Activities"
-- Création du footer
+- Ajout d'une animation sur le bouton "favori"
+- Ajout de la loading page
 
-*v.1.0.0 (nov20)* : 
-- Création du nouveau design web Réservia
+*v.1.0.0 (janv20)* : 
+- Création de la structure HTML et de l'architecture SCSS
 
 ## Outils 
-- Visual Studio Code avec les pluggins : (Prettier, GitLens, Auto Complete Tag, Auto Close Tag)
+- Visual Studio Code avec les pluggins : (Prettier, Live Server, Live Sass Compile)
 - W3C Validator : https://validator.w3.org/
 
 ## License 
